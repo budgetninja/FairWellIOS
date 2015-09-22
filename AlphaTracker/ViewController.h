@@ -11,5 +11,10 @@
 @interface ViewController : UIViewController
 
 
+
+/*- (void)buttonPressed:(UIButton *)sender;*/
+
+@property (nonatomic, retain) IBOutlet UIButton *button;
+
 @end
 
