@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //CANVAS - WINDOW
+    CGRect viewRect = [[UIScreen mainScreen] bounds]; //get the main screen and the bounds of the screen
+    self.window = [[UIWindow alloc] initWithFrame:viewRect]; //allocate memory for UI window and initialize object with frame size to the bounds of the mainscreen
+    
+    //PAINTBRUSH - VIEW CONTROLLER
+    self.viewController = [[ViewController alloc] init];
+    
+    //PAINT - VIEW //Usually we want to encapsulate our view into ViewController.. NOT GOOD TO LEAVE IT HERE
+    /*UIView *view = [[UIView alloc] initWithFrame:viewRect];
+    view.backgroundColor = [UIColor yellowColor];
+    self.viewController.view = view;*/
+    
+    self.window.rootViewController = self.viewController; //view controller gets control of the window
+    [self.window makeKeyAndVisible]; //means it should receive all keyboard and non-touch events
+    NSLog(@"Screen is %f tall and %f wide", viewRect.size.height, viewRect.size.width);
     return YES;
 }
 
