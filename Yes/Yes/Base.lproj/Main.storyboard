@@ -47,7 +47,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Edv-7F-PTN">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ReEnter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Edv-7F-PTN">
                                 <rect key="frame" x="59" y="261" width="202" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -109,7 +109,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" id="WRO-Kk-0KY"/>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="QWP-Mb-eUm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -148,6 +148,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="7x6-Zi-GuD"/>
+        <segue reference="QWP-Mb-eUm"/>
     </inferredMetricsTieBreakers>
 </document>
