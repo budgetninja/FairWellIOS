@@ -15,8 +15,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 @property (weak, nonatomic) IBOutlet UITextField *reEnterPasswordField;
+@property (weak, nonatomic) IBOutlet UIButton *resetBtn;
 
 -(IBAction)registerUser:(id)sender;
 -(IBAction)LoginUser:(id)sender;
+-(IBAction) resetUser:(id)sender;
 
 @end

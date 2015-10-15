@@ -21,12 +21,12 @@
     
     if (![defaults boolForKey: @"registered"]) {
         NSLog(@"No Registered User");
-        _loginBtn.hidden=YES;
+        _loginBtn.hidden=NO;
     }
     else {
         NSLog(@"User is Registered");
         _reEnterPasswordField.hidden = YES;
-       _registerBtn.hidden = YES;
+        _registerBtn.hidden = NO;
     }
     
     
@@ -89,13 +89,23 @@
     }
     else
     {
-        UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"I'm Sorry" message:@"You must complete all fields" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"I'm Sorry" message:@"Wrong Username Or Password" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
         
         [error show];
     }
     
 }
 
+-(IBAction) resetUser:(id)sender
+{
+    
+NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setObject: nil forKey:@"username"];
+    [defaults setObject: nil forKey:@"password"];
+    [defaults setBool:NO forKey:@"registered"];
+    _reEnterPasswordField.hidden = NO;
+}
 
 @end
 

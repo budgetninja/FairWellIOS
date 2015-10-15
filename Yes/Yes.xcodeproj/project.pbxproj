@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F71FBFB61BD0184A00823593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71FBFB51BD0184A00823593 /* Main.storyboard */; };
 		F738729E1BB23A2100DE3C1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F738729D1BB23A2100DE3C1B /* main.m */; };
 		F73872A11BB23A2100DE3C1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F73872A01BB23A2100DE3C1B /* AppDelegate.m */; };
 		F73872A41BB23A2100DE3C1B /* Yes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F73872A21BB23A2100DE3C1B /* Yes.xcdatamodeld */; };
 		F73872A71BB23A2100DE3C1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73872A61BB23A2100DE3C1B /* ViewController.m */; };
-		F73872AA1BB23A2100DE3C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73872A81BB23A2100DE3C1B /* Main.storyboard */; };
 		F73872AC1BB23A2100DE3C1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73872AB1BB23A2100DE3C1B /* Images.xcassets */; };
 		F73872AF1BB23A2100DE3C1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73872AD1BB23A2100DE3C1B /* LaunchScreen.xib */; };
 		F73872BB1BB23A2100DE3C1B /* YesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F73872BA1BB23A2100DE3C1B /* YesTests.m */; };
@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F71FBFB51BD0184A00823593 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = SOURCE_ROOT; };
 		F73872981BB23A2100DE3C1B /* Yes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F738729C1BB23A2100DE3C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F738729D1BB23A2100DE3C1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		F73872A31BB23A2100DE3C1B /* Yes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Yes.xcdatamodel; sourceTree = "<group>"; };
 		F73872A51BB23A2100DE3C1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F73872A61BB23A2100DE3C1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F73872A91BB23A2100DE3C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F73872AB1BB23A2100DE3C1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F73872AE1BB23A2100DE3C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F73872B41BB23A2100DE3C1B /* YesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +92,7 @@
 				F73872A61BB23A2100DE3C1B /* ViewController.m */,
 				F73872C61BB2513900DE3C1B /* LoggedIn.h */,
 				F73872C71BB2513900DE3C1B /* LoggedIn.m */,
-				F73872A81BB23A2100DE3C1B /* Main.storyboard */,
+				F71FBFB51BD0184A00823593 /* Main.storyboard */,
 				F73872AB1BB23A2100DE3C1B /* Images.xcassets */,
 				F73872AD1BB23A2100DE3C1B /* LaunchScreen.xib */,
 				F73872A21BB23A2100DE3C1B /* Yes.xcdatamodeld */,
@@ -207,9 +207,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F73872AA1BB23A2100DE3C1B /* Main.storyboard in Resources */,
 				F73872AF1BB23A2100DE3C1B /* LaunchScreen.xib in Resources */,
 				F73872AC1BB23A2100DE3C1B /* Images.xcassets in Resources */,
+				F71FBFB61BD0184A00823593 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +254,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F73872A81BB23A2100DE3C1B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F73872A91BB23A2100DE3C1B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F73872AD1BB23A2100DE3C1B /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -422,6 +414,7 @@
 				F73872C01BB23A2100DE3C1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F73872C11BB23A2100DE3C1B /* Build configuration list for PBXNativeTarget "YesTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +423,7 @@
 				F73872C31BB23A2100DE3C1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
