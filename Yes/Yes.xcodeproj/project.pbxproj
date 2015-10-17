@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D6BAA8E1BD2438A00E3D789 /* FairWellImage-master in Resources */ = {isa = PBXBuildFile; fileRef = 2D6BAA8D1BD2438A00E3D789 /* FairWellImage-master */; settings = {ASSET_TAGS = (); }; };
 		F71FBFB61BD0184A00823593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71FBFB51BD0184A00823593 /* Main.storyboard */; };
 		F738729E1BB23A2100DE3C1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F738729D1BB23A2100DE3C1B /* main.m */; };
 		F73872A11BB23A2100DE3C1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F73872A01BB23A2100DE3C1B /* AppDelegate.m */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D6BAA8D1BD2438A00E3D789 /* FairWellImage-master */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "FairWellImage-master"; path = "../../../../Downloads/FairWellImage-master"; sourceTree = "<group>"; };
 		F71FBFB51BD0184A00823593 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = SOURCE_ROOT; };
 		F73872981BB23A2100DE3C1B /* Yes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F738729C1BB23A2100DE3C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				F73872AB1BB23A2100DE3C1B /* Images.xcassets */,
 				F73872AD1BB23A2100DE3C1B /* LaunchScreen.xib */,
 				F73872A21BB23A2100DE3C1B /* Yes.xcdatamodeld */,
+				2D6BAA8D1BD2438A00E3D789 /* FairWellImage-master */,
 				F738729B1BB23A2100DE3C1B /* Supporting Files */,
 			);
 			path = Yes;
@@ -209,6 +212,7 @@
 			files = (
 				F73872AF1BB23A2100DE3C1B /* LaunchScreen.xib in Resources */,
 				F73872AC1BB23A2100DE3C1B /* Images.xcassets in Resources */,
+				2D6BAA8E1BD2438A00E3D789 /* FairWellImage-master in Resources */,
 				F71FBFB61BD0184A00823593 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
