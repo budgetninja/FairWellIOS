@@ -16,8 +16,8 @@
 		F79684771BE12B1C00EBE9C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79684751BE12B1C00EBE9C3 /* LaunchScreen.xib */; };
 		F79684831BE12B1C00EBE9C3 /* SlideBarTrialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F79684821BE12B1C00EBE9C3 /* SlideBarTrialTests.m */; };
 		F79684921BE1328300EBE9C3 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F79684911BE1328300EBE9C3 /* NavigationViewController.m */; };
-		F7CD7B2D1BE3BF63007FD15B /* nav-icon (1).png in Resources */ = {isa = PBXBuildFile; fileRef = F7CD7B2C1BE3BF63007FD15B /* nav-icon (1).png */; };
 		F7CD7B301BE3C041007FD15B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CD7B2F1BE3C041007FD15B /* SWRevealViewController.m */; };
+		F7CD7B341BE3C363007FD15B /* nav-icon (1).png in Resources */ = {isa = PBXBuildFile; fileRef = F7CD7B331BE3C363007FD15B /* nav-icon (1).png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +47,9 @@
 		F79684821BE12B1C00EBE9C3 /* SlideBarTrialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideBarTrialTests.m; sourceTree = "<group>"; };
 		F79684901BE1328300EBE9C3 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		F79684911BE1328300EBE9C3 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
-		F7CD7B2C1BE3BF63007FD15B /* nav-icon (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nav-icon (1).png"; path = "../../../../Documents/nav-icon (1).png"; sourceTree = "<group>"; };
 		F7CD7B2E1BE3C041007FD15B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = SOURCE_ROOT; };
 		F7CD7B2F1BE3C041007FD15B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = SOURCE_ROOT; };
+		F7CD7B331BE3C363007FD15B /* nav-icon (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nav-icon (1).png"; path = "../../nav-icon (1).png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 		F79684621BE12B1C00EBE9C3 /* SlideBarTrial */ = {
 			isa = PBXGroup;
 			children = (
-				F7CD7B2B1BE3BEFF007FD15B /* Images */,
+				F7CD7B321BE3C34B007FD15B /* images */,
 				F79684671BE12B1C00EBE9C3 /* AppDelegate.h */,
 				F79684681BE12B1C00EBE9C3 /* AppDelegate.m */,
 				F796846D1BE12B1C00EBE9C3 /* ViewController.h */,
@@ -144,12 +144,12 @@
 			path = ../../../Desktop/SlideOutMenuFiles;
 			sourceTree = "<group>";
 		};
-		F7CD7B2B1BE3BEFF007FD15B /* Images */ = {
+		F7CD7B321BE3C34B007FD15B /* images */ = {
 			isa = PBXGroup;
 			children = (
-				F7CD7B2C1BE3BF63007FD15B /* nav-icon (1).png */,
+				F7CD7B331BE3C363007FD15B /* nav-icon (1).png */,
 			);
-			name = Images;
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7CD7B2D1BE3BF63007FD15B /* nav-icon (1).png in Resources */,
+				F7CD7B341BE3C363007FD15B /* nav-icon (1).png in Resources */,
 				F79684721BE12B1C00EBE9C3 /* Main.storyboard in Resources */,
 				F79684771BE12B1C00EBE9C3 /* LaunchScreen.xib in Resources */,
 				F79684741BE12B1C00EBE9C3 /* Images.xcassets in Resources */,
