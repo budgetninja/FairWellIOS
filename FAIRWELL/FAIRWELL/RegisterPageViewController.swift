@@ -56,11 +56,32 @@ class RegisterPageViewController: UIViewController {
             return;
         }
         
-        //Store data
+       /* //Store data NOT USING PARSE
         NSUserDefaults.standardUserDefaults().setObject(userUsername, forKey:"userUsername");
         NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey:"userEmail");
         NSUserDefaults.standardUserDefaults().setObject(userPassword, forKey:"userPassword");
         NSUserDefaults.standardUserDefaults().synchronize();
+        */
+        
+        //Store data in PARSE
+        let myUser:PFUser = PFUser();
+        myUser.username = userUsername;
+        myUser.password = userPassword;
+        myUser.email = userEmail;
+        
+        
+        /*PFUser.logInWithUsernameInBackground(userUsername!, password: userPassword!){
+            (user:PFUser?, error:NSError?) -> Void in
+            if (user != nil){
+                print ("User successfully registered.")}*/
+        
+        
+      /*  myUser.signUpInBackgroundWithBlock
+        {
+            (success:Bool!, error:NSError!) -> Void in println ("User successfully registered.")*/
+        
+        myUser.signUpInBackgroundWithBlock {
+            (succeeded: Bool, error: NSError?) -> Void in print ("User successfully registered.")
         
         //Display alert message with confirmation
         var myAlert = UIAlertController(title:"Thank you!", message: "Registration is successful.", preferredStyle:UIAlertControllerStyle.Alert);
@@ -69,7 +90,14 @@ class RegisterPageViewController: UIViewController {
         }
         
         myAlert.addAction(okAction);
-        self.presentViewController(myAlert, animated: true, completion: nil);
+        self.presentViewController(myAlert, animated: true, completion: nil);   
+
+            
+        }
+  
+        
+        
+       
     }
     
 

@@ -201,6 +201,7 @@
         <!--Navigation Controller-->
         <scene sceneID="dXP-8d-jAO">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iwy-Lz-mYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G1U-YX-b1y" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XpB-zl-xdO">
@@ -212,7 +213,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZwO-ZX-Dc0"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iwy-Lz-mYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-51" y="296"/>
         </scene>
@@ -225,6 +225,6 @@
         <image name="twitter_button.png" width="158" height="28"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="G82-ha-uvp"/>
+        <segue reference="ZwO-ZX-Dc0"/>
     </inferredMetricsTieBreakers>
 </document>

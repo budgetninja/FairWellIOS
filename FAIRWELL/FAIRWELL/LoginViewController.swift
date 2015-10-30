@@ -29,6 +29,24 @@ class LoginViewController: UIViewController {
         let userUsername = usernameTextField.text;
         let userPassword = passwordTextField.text;
         
+        //Login WITH PARSE
+        PFUser.logInWithUsernameInBackground(userUsername!, password: userPassword!) {
+            (user: PFUser?, error: NSError?) -> Void in
+            if user != nil
+            {
+                //Login is successful.
+                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn");
+                NSUserDefaults.standardUserDefaults().synchronize();
+                self.dismissViewControllerAnimated(true, completion: nil); //dismisses view controller
+            }
+            else{
+                print ("Could not find user");
+            }
+            
+        }
+        
+        /*
+        //Storing user details WITHOUT PARSE
         let usernameStored = NSUserDefaults.standardUserDefaults().stringForKey("userUsername");
         let passwordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
         
@@ -41,7 +59,7 @@ class LoginViewController: UIViewController {
                 NSUserDefaults.standardUserDefaults().synchronize();
                 self.dismissViewControllerAnimated(true, completion: nil);
             }
-        }
+        }*/
         
     }
     
