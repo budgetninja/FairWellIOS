@@ -203,7 +203,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Cg2-RD-Thb">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="iac-pp-3VR"/>
+                        <barButtonItem key="leftBarButtonItem" image="nav-icon (1).png" id="iac-pp-3VR">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="sidebarButton" destination="iac-pp-3VR" id="Cd9-lc-bES"/>
@@ -214,6 +216,9 @@
             <point key="canvasLocation" x="1047" y="678"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nav-icon (1).png" width="22" height="22"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
