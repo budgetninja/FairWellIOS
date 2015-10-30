@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="xhZ-6w-GIe">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
@@ -27,11 +26,6 @@
                                 </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g5m-4z-oF7">
-                                <rect key="frame" x="52" y="223" width="217" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Cm-0s-zdR">
                                 <rect key="frame" x="52" y="179" width="217" height="30"/>
@@ -68,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jv6-Zs-9Sv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="595" y="-331"/>
+            <point key="canvasLocation" x="522" y="-313"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -554,7 +548,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImJ-pa-28a">
                                 <rect key="frame" x="236" y="110" width="30" height="30"/>
-                                <state key="normal" title="Button" backgroundImage="icon_7.jpg"/>
+                                <state key="normal" backgroundImage="icon_7.jpg"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -563,7 +557,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AKz-mu-Nrh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="-353"/>
+            <point key="canvasLocation" x="1009" y="-355"/>
         </scene>
         <!--View statements-->
         <scene sceneID="llS-I2-vLY">
@@ -606,7 +600,7 @@
         <!--Login Screen-->
         <scene sceneID="m5B-cy-D9G">
             <objects>
-                <navigationController title="Login Screen" automaticallyAdjustsScrollViewInsets="NO" id="xhZ-6w-GIe" sceneMemberID="viewController">
+                <navigationController title="Login Screen" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="xhZ-6w-GIe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3hN-RX-7J8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

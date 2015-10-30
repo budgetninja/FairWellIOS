@@ -20,5 +20,6 @@
 -(IBAction)registerUser:(id)sender;
 -(IBAction)LoginUser:(id)sender;
 -(IBAction) resetUser:(id)sender;
+-(IBAction)registerNewUser:(id)sender;
 
 @end
