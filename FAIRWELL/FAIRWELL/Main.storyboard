@@ -45,7 +45,6 @@
                                 <state key="normal" backgroundImage="login_button.png"/>
                                 <connections>
                                     <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ui2-Gb-V9a"/>
-                                    <segue destination="k8a-E9-UfI" kind="modal" id="J9t-Fg-ZKh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSS-96-pFT">
@@ -202,7 +201,6 @@
         <!--Navigation Controller-->
         <scene sceneID="dXP-8d-jAO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iwy-Lz-mYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G1U-YX-b1y" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XpB-zl-xdO">
@@ -214,6 +212,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZwO-ZX-Dc0"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iwy-Lz-mYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-51" y="296"/>
         </scene>
@@ -809,7 +808,7 @@
         <!--User Profile-->
         <scene sceneID="VSK-sL-MJm">
             <objects>
-                <viewController title="User Profile" id="k8a-E9-UfI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="User Profile" title="User Profile" id="k8a-E9-UfI" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cNZ-l8-5dP"/>
                         <viewControllerLayoutGuide type="bottom" id="cxi-jH-ysu"/>
@@ -878,7 +877,6 @@
         <!--View Controller-->
         <scene sceneID="YLu-xL-aF8">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lit-1k-Dg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="VtJ-dx-xYp" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4pN-sW-kqW"/>
@@ -1054,6 +1052,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lit-1k-Dg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1574" y="988"/>
         </scene>
@@ -1074,6 +1073,6 @@
         <image name="twitter_button.png" width="158" height="28"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="G82-ha-uvp"/>
+        <segue reference="ZwO-ZX-Dc0"/>
     </inferredMetricsTieBreakers>
 </document>

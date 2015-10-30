@@ -18,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+ 
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,8 +29,9 @@
 }
 
 
-/*
 
+
+/*
 - (void)viewDidAppear:(BOOL)animated {
     NSUserDefaults *isUserLoggedIn = [NSUserDefaults standardUserDefaults];
     [isUserLoggedIn setValue:@"TRUE" forKey:@"isUserLoggedIn"];

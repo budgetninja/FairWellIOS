@@ -38,9 +38,15 @@ class LoginViewController: UIViewController {
                 NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn");
                 NSUserDefaults.standardUserDefaults().synchronize();
                 self.dismissViewControllerAnimated(true, completion: nil); //dismisses view controller
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let gotoUserProfileViewController = storyboard.instantiateViewControllerWithIdentifier("User Profile") as UIViewController
+                self.presentViewController(gotoUserProfileViewController, animated: true, completion: nil)
             }
             else{
                 print ("Could not find user");
+                self.displayMyAlertMessage("User cannot be found.");
+                return;
+                
             }
             
         }

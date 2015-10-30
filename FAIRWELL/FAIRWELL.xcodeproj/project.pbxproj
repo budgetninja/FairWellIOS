@@ -12,7 +12,6 @@
 		2D214C961BE167AF00E1736A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D214C951BE167AF00E1736A /* ViewController.m */; };
 		2D214C9B1BE167AF00E1736A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D214C9A1BE167AF00E1736A /* Assets.xcassets */; };
 		2D214C9E1BE167AF00E1736A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214C9C1BE167AF00E1736A /* LaunchScreen.storyboard */; };
-		2D214CA91BE16DEE00E1736A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214C971BE167AF00E1736A /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		2D214CD31BE17B1600E1736A /* app-logo.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2D214CBA1BE17B1600E1736A /* app-logo.PNG */; settings = {ASSET_TAGS = (); }; };
 		2D214CD41BE17B1600E1736A /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D214CBB1BE17B1600E1736A /* appicon.png */; settings = {ASSET_TAGS = (); }; };
 		2D214CD51BE17B1600E1736A /* concat_pics.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D214CBC1BE17B1600E1736A /* concat_pics.jpg */; settings = {ASSET_TAGS = (); }; };
@@ -60,6 +59,7 @@
 		2D214D481BE1CF8200E1736A /* MyConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D214D471BE1CF8200E1736A /* MyConnector.m */; settings = {ASSET_TAGS = (); }; };
 		2D214D561BE1D56B00E1736A /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D214D551BE1D56B00E1736A /* RegisterPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		2D214D5B1BE21B8D00E1736A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D214D5A1BE21B8D00E1736A /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2D214D6B1BE4062500E1736A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214D6A1BE4062500E1736A /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +69,6 @@
 		2D214C921BE167AF00E1736A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2D214C941BE167AF00E1736A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2D214C951BE167AF00E1736A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2D214C981BE167AF00E1736A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D214C9A1BE167AF00E1736A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D214C9D1BE167AF00E1736A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D214C9F1BE167AF00E1736A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,6 +121,7 @@
 		2D214D491BE1CFD900E1736A /* FAIRWELL-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FAIRWELL-Bridging-Header.h"; sourceTree = "<group>"; };
 		2D214D551BE1D56B00E1736A /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		2D214D5A1BE21B8D00E1736A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2D214D6A1BE4062500E1736A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,8 +179,8 @@
 				2D214C921BE167AF00E1736A /* AppDelegate.m */,
 				2D214C941BE167AF00E1736A /* ViewController.h */,
 				2D214C951BE167AF00E1736A /* ViewController.m */,
-				2D214C971BE167AF00E1736A /* Main.storyboard */,
 				2D214C9A1BE167AF00E1736A /* Assets.xcassets */,
+				2D214D6A1BE4062500E1736A /* Main.storyboard */,
 				2D214C9C1BE167AF00E1736A /* LaunchScreen.storyboard */,
 				2D214C9F1BE167AF00E1736A /* Info.plist */,
 				2D214C8E1BE167AF00E1736A /* Supporting Files */,
@@ -325,6 +325,7 @@
 				2D214CD41BE17B1600E1736A /* appicon.png in Resources */,
 				2D214CD71BE17B1600E1736A /* icon_1.jpg in Resources */,
 				2D214CE31BE17B1600E1736A /* icon_7.jpg in Resources */,
+				2D214D6B1BE4062500E1736A /* Main.storyboard in Resources */,
 				2D214CE71BE17B1700E1736A /* profilepic.png in Resources */,
 				2D214CE21BE17B1600E1736A /* icon_6a.jpg in Resources */,
 				2D214CE91BE17B1700E1736A /* register_button.png in Resources */,
@@ -338,7 +339,6 @@
 				2D214CE51BE17B1700E1736A /* login_button.png in Resources */,
 				2D214CDA1BE17B1600E1736A /* icon_2a.jpg in Resources */,
 				2D214CD31BE17B1600E1736A /* app-logo.PNG in Resources */,
-				2D214CA91BE16DEE00E1736A /* Main.storyboard in Resources */,
 				2D214CD81BE17B1600E1736A /* icon_1a.jpg in Resources */,
 				2D214CDD1BE17B1600E1736A /* icon_4.jpg in Resources */,
 				2D214CD61BE17B1600E1736A /* facebook_button.png in Resources */,
@@ -369,14 +369,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2D214C971BE167AF00E1736A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D214C981BE167AF00E1736A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2D214C9C1BE167AF00E1736A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
