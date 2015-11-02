@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import <ParseTwitterUtils/ParseTwitterUtils.h>
 
 @interface AppDelegate ()
 
@@ -27,6 +28,10 @@
     
     //Parse tracks statistics when application opens
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
+    [PFTwitterUtils initializeWithConsumerKey:@"XHhWNEDZIVVJJpeqJE5iPGWKx"
+                               consumerSecret:@"Se0RMB7HPhevHf3Jy5Y7RCnIJ4NYOefLV0MqxNLtlcQDICjFX1"];
     
     return YES;
 }

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <Parse/Parse.h>
+#import <ParseTwitterUtils/ParseTwitterUtils.h>
 
 @interface ViewController ()
 

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ParseTwitterUtils
+import Parse
 
 class LoginViewController: UIViewController {
 
@@ -89,4 +91,120 @@ class LoginViewController: UIViewController {
     }
     */
 
+    
+    
+    
+    
+    @IBAction func TwitterButtonTapped(sender: AnyObject) {
+        
+        
+        PFTwitterUtils.logInWithBlock {
+            (user: PFUser?, error: NSError?) -> Void in
+            if let user = user {
+                if user.isNew {
+                   //process user object
+                    self.processTwitterUser()
+                } else {
+                   //process user object
+                    self.processTwitterUser()
+                }
+            } else {
+                print("Uh oh. The user cancelled the Twitter login.")
+            }
+        }
+    
+        
+    }
+    
+    
+    
+    
+    
+    func processTwitterUser(){
+        
+        //Show activity indicator
+        let spinningActivity = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        spinningActivity.labelText = "Loading"
+        spinningActivity.detailsLabelText = "Please wait"
+        
+        let pfTwitter = PFTwitterUtils.twitter()
+        let TwitterUsername = pfTwitter?.screenName
+        
+        var userDetailsURL:String = "http://api.twitter.com/1.1/users/show.json?screen_name="
+        userDetailsURL = userDetailsURL + TwitterUsername!
+        
+        let myURL = NSURL(string: userDetailsURL);
+        let request = NSMutableURLRequest(URL:myURL!);
+        request.HTTPMethod = "GET";
+        
+        pfTwitter!.signRequest(request);
+        
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request){
+            data, response, error in
+            
+            if error != nil{
+                spinningActivity.hide(true)
+                
+                self.displayMyAlertMessage(error!.localizedDescription);
+                
+                
+                PFUser.logOut()
+                return
+            }
+            
+            do{
+            
+            let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers) as? NSDictionary
+            
+            if let parseJSON = json
+            {
+                //Extract profile image
+                if let profileImageURL = parseJSON["profile_image_url"] as? String
+                {
+                    let profilePictureURL = NSURL(string: profileImageURL)
+                    let profilePictureData = NSData(contentsOfURL: profilePictureURL!)
+                    
+                    //Prepare PFUser object
+                    if(profilePictureData != nil){
+                        let profileFileObject = PFFile(data:profilePictureData!)
+                        PFUser.currentUser()?.setObject(profileFileObject!, forKey: "profile_picture")
+                    }
+                    
+                    PFUser.currentUser()?.username = TwitterUsername
+                    PFUser.currentUser()?.setObject(TwitterUsername!, forKey: "first_name")
+                    PFUser.currentUser()?.setObject(" ", forKey: "last_name")
+                    /*
+                    PFUser.currentUser()?.saveInBackgroundWithBlock({ (success, error) -> Void in
+                        if(error != nil)
+                        {
+                            spinningActivity.hide(true)
+                            
+                            //Display error message
+                            self.displayMyAlertMessage(error!.localizedDescription);
+                            PFUser.logOut()
+                            return
+                        }
+                        
+                        spinningActivity.hide(true)
+                        NSUserDefaults.standardUserDefaults().setObject(TwitterUsername, forKey: "user_name")
+                        NSUserDefaults.standardUserDefaults().synchronize()
+                        
+                        
+                        dispatch_async(dispatch_get_main_queue()){
+                            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                            appDelegate.buildUserInterface()
+                        }
+                    })*/
+                }
+            }
+        } catch{
+            print(error)
+        }
+    }
+        
+        task.resume()
+    
+    }
+    
+    
 }
