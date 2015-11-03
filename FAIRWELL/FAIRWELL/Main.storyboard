@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="G1U-YX-b1y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="G1U-YX-b1y">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--Login-->
@@ -9,8 +9,8 @@
             <objects>
                 <viewController title="Login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="FAIRWELL" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="68O-bJ-rdh"/>
+                        <viewControllerLayoutGuide type="bottom" id="gHo-Xv-oDX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -51,7 +51,7 @@
                                 <rect key="frame" x="47" y="326" width="227" height="40"/>
                                 <state key="normal" backgroundImage="register_button.png"/>
                                 <connections>
-                                    <segue destination="iDb-8v-aS1" kind="modal" identifier="registerView" id="ycL-wD-z0x"/>
+                                    <segue destination="ePA-Cw-tWL" kind="modal" id="cv7-Qo-RiF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AV-zB-DXm">
@@ -87,8 +87,8 @@
             <objects>
                 <viewController storyboardIdentifier="RegisterPageViewController" title="RegisterPage" id="iDb-8v-aS1" customClass="RegisterPageViewController" customModule="FAIRWELL" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fyB-zb-bRT"/>
-                        <viewControllerLayoutGuide type="bottom" id="LEe-0g-n0A"/>
+                        <viewControllerLayoutGuide type="top" id="7Wj-uc-5FZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="2t0-zJ-8N0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MFP-BE-TI0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -143,13 +143,16 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZk-4S-tXY">
-                                <rect key="frame" x="39" y="331" width="234" height="30"/>
+                                <rect key="frame" x="106" y="331" width="184" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <state key="normal" title="CLICK TO UPLOAD IMAGE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="uploadImageButtonTapped:" destination="iDb-8v-aS1" eventType="touchUpInside" id="NL5-Mz-1Yi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVH-Gw-Nxs">
                                 <rect key="frame" x="20" y="452" width="270" height="44"/>
@@ -167,13 +170,6 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9t-yl-8Yk">
-                                <rect key="frame" x="84" y="369" width="142" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="Terms and Condition">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdX-EJ-Uzc">
                                 <rect key="frame" x="139" y="504" width="42" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -183,6 +179,16 @@
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="modal" id="G82-ha-uvp"/>
                                 </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lgl-vM-whb">
+                                <rect key="frame" x="20" y="326" width="78" height="73"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9t-yl-8Yk">
+                                <rect key="frame" x="106" y="369" width="142" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Terms and Condition">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -194,12 +200,13 @@
                         <outlet property="firstNameTextField" destination="PfN-rc-PHQ" id="Eas-2a-ugD"/>
                         <outlet property="lastNameTextField" destination="r8h-lj-OMn" id="v5K-St-KSg"/>
                         <outlet property="passwordTextField" destination="sru-eJ-A9J" id="1wf-f8-owV"/>
+                        <outlet property="profilePhotoImageView" destination="Lgl-vM-whb" id="t4e-Zc-SH1"/>
                         <outlet property="usernameTextField" destination="vUX-1Z-S4A" id="ycs-VH-002"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DoA-Cu-zDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="831" y="296"/>
+            <point key="canvasLocation" x="1140" y="296"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dXP-8d-jAO">
@@ -224,8 +231,8 @@
             <objects>
                 <viewController id="qyi-l0-70U" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Qfc-3V-E9X"/>
-                        <viewControllerLayoutGuide type="bottom" id="xPC-Mo-Zcb"/>
+                        <viewControllerLayoutGuide type="top" id="vI8-rK-vhB"/>
+                        <viewControllerLayoutGuide type="bottom" id="CCv-ja-LT8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="79I-i5-9Wh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -372,8 +379,8 @@
             <objects>
                 <viewController id="tOE-IY-kzN" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Fez-wV-uTf"/>
-                        <viewControllerLayoutGuide type="bottom" id="bkr-Gd-adz"/>
+                        <viewControllerLayoutGuide type="top" id="QrW-8K-Qt7"/>
+                        <viewControllerLayoutGuide type="bottom" id="abJ-t2-mNN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0aD-7O-Oph">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -545,8 +552,8 @@
             <objects>
                 <viewController id="mJi-xA-9Jv" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LhE-V0-fbh"/>
-                        <viewControllerLayoutGuide type="bottom" id="CbK-F4-PXl"/>
+                        <viewControllerLayoutGuide type="top" id="BLQ-uq-pmv"/>
+                        <viewControllerLayoutGuide type="bottom" id="hRh-UF-SNf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bxj-Rf-Q6J">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -813,8 +820,8 @@
             <objects>
                 <viewController storyboardIdentifier="User Profile" title="User Profile" id="k8a-E9-UfI" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cNZ-l8-5dP"/>
-                        <viewControllerLayoutGuide type="bottom" id="cxi-jH-ysu"/>
+                        <viewControllerLayoutGuide type="top" id="Yxd-2n-sh6"/>
+                        <viewControllerLayoutGuide type="bottom" id="x1T-88-5Ob"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wj0-2U-fnu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -882,8 +889,8 @@
             <objects>
                 <viewController id="VtJ-dx-xYp" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4pN-sW-kqW"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qjl-TW-wBt"/>
+                        <viewControllerLayoutGuide type="top" id="WKg-PY-Diu"/>
+                        <viewControllerLayoutGuide type="bottom" id="J3x-mB-fxC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1QP-VD-Czn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -1059,6 +1066,24 @@
             </objects>
             <point key="canvasLocation" x="1574" y="988"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XET-bm-APa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ePA-Cw-tWL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hOJ-7O-7PC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iDb-8v-aS1" kind="relationship" relationship="rootViewController" id="p40-1R-VTE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTH-12-Zon" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776" y="296"/>
+        </scene>
     </scenes>
     <resources>
         <image name="facebook_button.png" width="243" height="40"/>
@@ -1076,6 +1101,6 @@
         <image name="twitter_button.png" width="158" height="28"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZwO-ZX-Dc0"/>
+        <segue reference="G82-ha-uvp"/>
     </inferredMetricsTieBreakers>
 </document>

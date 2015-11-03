@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterPageViewController: UIViewController {
+class RegisterPageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -27,6 +27,39 @@ class RegisterPageViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //Uploading profile image
+    
+    @IBOutlet weak var profilePhotoImageView: UIImageView!
+    
+
+
+    @IBAction func uploadImageButtonTapped(sender: AnyObject) {
+        var myPickerController = UIImagePickerController()
+        myPickerController.delegate = self;
+        myPickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            
+        self.presentViewController(myPickerController, animated: true, completion: nil)
+            
+    }
+        
+        
+    
+
+    
+    //user selects an image, then this function is called
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
+    {
+        //image is set
+        profilePhotoImageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    
+    
+    
     
 
     @IBAction func registerButtonTapped(sender: AnyObject) {
