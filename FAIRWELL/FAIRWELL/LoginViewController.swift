@@ -10,6 +10,7 @@ import UIKit
 import ParseTwitterUtils
 import Parse
 
+
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
@@ -31,26 +32,53 @@ class LoginViewController: UIViewController {
         let userUsername = usernameTextField.text;
         let userPassword = passwordTextField.text;
         
+        if(userUsername!.isEmpty || userPassword!.isEmpty)
+        {
+            return;
+        }
+        
         //Login WITH PARSE
         PFUser.logInWithUsernameInBackground(userUsername!, password: userPassword!) {
             (user: PFUser?, error: NSError?) -> Void in
+            
+            var userMessage = "Welcome";
+            
             if user != nil
             {
+                /*
                 //Login is successful.
+                let userUsername:String? = user?.username
+                NSUserDefaults.standardUserDefaults().setObject(userUsername, forKey: "username");
+                NSUserDefaults.standardUserDefaults().synchronize();
+                
+                let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil);
+                
+                var mainPage:MainPageViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("MainPageViewController") as! MainPageViewController;
+                
+                //wrapped rootViewController into NavigationController
+                var mainPageNav = UINavigationController(rootViewController: mainPage);
+                
+                //Replace signin page with new page by accessing window object
+                var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+                
+                appDelegate.window?.rootViewController = mainPageNav;
+                */
+                
+                /*
                 NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn");
                 NSUserDefaults.standardUserDefaults().synchronize();
                 self.dismissViewControllerAnimated(true, completion: nil); //dismisses view controller
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let gotoUserProfileViewController = storyboard.instantiateViewControllerWithIdentifier("User Profile") as UIViewController
-                self.presentViewController(gotoUserProfileViewController, animated: true, completion: nil)
+                self.presentViewController(gotoUserProfileViewController, animated: true, completion: nil)*/
+            
             }
             else{
-                print ("Could not find user");
-                self.displayMyAlertMessage("User cannot be found.");
-                return;
+                
+                userMessage = error!.localizedDescription;
                 
             }
-            
+            //self.displayMyAlertMessage(error!.localizedDescription);
         }
         
         /*
@@ -115,10 +143,7 @@ class LoginViewController: UIViewController {
     
         
     }
-    
-    
-    
-    
+   
     
     func processTwitterUser(){
         

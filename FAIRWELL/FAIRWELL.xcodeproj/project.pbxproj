@@ -62,6 +62,7 @@
 		2D214D861BE7585200E1736A /* FacebookSDKs-iOS-20151026 in Resources */ = {isa = PBXBuildFile; fileRef = 2D214D851BE7585200E1736A /* FacebookSDKs-iOS-20151026 */; };
 		2D214D891BE758B700E1736A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D214D881BE758B700E1736A /* MBProgressHUD.m */; };
 		2DF749AD1BE856390062EE40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214D6A1BE4062500E1736A /* Main.storyboard */; };
+		2DF749B31BE89C080062EE40 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF749B21BE89C080062EE40 /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +128,7 @@
 		2D214D851BE7585200E1736A /* FacebookSDKs-iOS-20151026 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "FacebookSDKs-iOS-20151026"; sourceTree = "<group>"; };
 		2D214D871BE758B700E1736A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		2D214D881BE758B700E1736A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2DF749B21BE89C080062EE40 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				2D214D881BE758B700E1736A /* MBProgressHUD.m */,
 				2D214D551BE1D56B00E1736A /* RegisterPageViewController.swift */,
 				2D214D5A1BE21B8D00E1736A /* LoginViewController.swift */,
+				2DF749B21BE89C080062EE40 /* MainPageViewController.swift */,
 			);
 			path = FAIRWELL;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				2D214C931BE167AF00E1736A /* AppDelegate.m in Sources */,
 				2D214CE81BE17B1700E1736A /* README.md in Sources */,
 				2D214C901BE167AF00E1736A /* main.m in Sources */,
+				2DF749B31BE89C080062EE40 /* MainPageViewController.swift in Sources */,
 				2D214D891BE758B700E1736A /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

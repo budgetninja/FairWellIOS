@@ -22,11 +22,24 @@ class RegisterPageViewController: UIViewController, UIImagePickerControllerDeleg
 
         // Do any additional setup after loading the view.
     }
+    
+    //
+    override func viewDidLayoutSubviews() {
+        self.edgesForExtendedLayout = UIRectEdge()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //When return arrow button is tapped
+    @IBAction func cancelButtonTapped(sender: AnyObject) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
     
     //Uploading profile image
     
@@ -85,8 +98,30 @@ class RegisterPageViewController: UIViewController, UIImagePickerControllerDeleg
         //Check if password and confirmed password matches.
         if(userPassword != userConfirmPassword)
         {
-            displayMyAlertMessage("Passwords do not match.");
+            displayMyAlertMessage("Passwords do not match. Please try again.");
             return;
+        }
+        
+        
+        
+        //Store data in PARSE
+        let myUser:PFUser = PFUser();
+        myUser.username = userUsername;
+        myUser.password = userPassword;
+        myUser.email = userEmail;
+        myUser.setObject(userFirstName!, forKey: "First_Name");
+        myUser.setObject(userLastName!, forKey: "Last_Name");
+        
+        
+
+        //Checks the profilePhotoImageView image view object to see if it is nil.
+        let profileImageData = UIImageJPEGRepresentation(profilePhotoImageView.image!, 1)
+        if(profileImageData != nil)
+        {
+            //Create PFFile object to be sent to Parse could service
+            let profileImageFile = PFFile(data: profileImageData!);
+            myUser.setObject(profileImageFile!, forKey: "photo")
+            
         }
         
        /* //Store data NOT USING PARSE
@@ -96,12 +131,7 @@ class RegisterPageViewController: UIViewController, UIImagePickerControllerDeleg
         NSUserDefaults.standardUserDefaults().synchronize();
         */
         
-        //Store data in PARSE
-        let myUser:PFUser = PFUser();
-        myUser.username = userUsername;
-        myUser.password = userPassword;
-        myUser.email = userEmail;
-        
+               
         
         /*PFUser.logInWithUsernameInBackground(userUsername!, password: userPassword!){
             (user:PFUser?, error:NSError?) -> Void in
@@ -109,27 +139,35 @@ class RegisterPageViewController: UIViewController, UIImagePickerControllerDeleg
                 print ("User successfully registered.")}*/
         
         
-      /*  myUser.signUpInBackgroundWithBlock
+        myUser.signUpInBackgroundWithBlock
         {
-            (success:Bool!, error:NSError!) -> Void in println ("User successfully registered.")*/
+            (success: Bool, error: NSError?) -> Void in print ("User successfully registered.");
         
-        myUser.signUpInBackgroundWithBlock {
-            (succeeded: Bool, error: NSError?) -> Void in print ("User successfully registered.")
+            //Display alert message with confirmation
+            var userMessage = "Thank you! Registration is successful.";
+            
+            if(!success)
+            {
+                //userMessage = "Could not register at this time. Please try again later.";
+                userMessage = error!.localizedDescription
+            }
+            
+            
+            var myAlert = UIAlertController(title:"Alert", message: userMessage, preferredStyle:UIAlertControllerStyle.Alert);
+            
+            let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.Default){ action in
+                if(success)
+                {
+                    self.dismissViewControllerAnimated(true, completion:nil);
+                }
+            }
         
-        //Display alert message with confirmation
-        var myAlert = UIAlertController(title:"Thank you!", message: "Registration is successful.", preferredStyle:UIAlertControllerStyle.Alert);
-        let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.Default){ action in
-            self.dismissViewControllerAnimated(true, completion:nil);
-        }
-        
-        myAlert.addAction(okAction);
-        self.presentViewController(myAlert, animated: true, completion: nil);   
+            myAlert.addAction(okAction);
+            self.presentViewController(myAlert, animated: true, completion: nil);
 
             
         }
   
-        
-        
        
     }
     
