@@ -6,9 +6,16 @@
 //  Copyright © 2015 Winnie Liang. All rights reserved.
 //
 
+
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 #import <ParseTwitterUtils/ParseTwitterUtils.h>
+#import <Bolts/Bolts.h>
+#import <UIKit/UIKit.h>
+
+
+
+
 
 @interface AppDelegate ()
 
@@ -20,6 +27,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    
     [Parse enableLocalDatastore];
     
     //Initializes Parse
@@ -29,11 +37,78 @@
     //Parse tracks statistics when application opens
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
+    /*
+    NSString *userName = [[NSUserDefaults standardUserDefaults] stringForKey:(@"username")];
+  
+    //if username has a value, take them to the User Profile page (MainPageViewController)
+    if(userName != nil)
+    {
+        
+        //Navigate to MainPageViewController
+        UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *mainPage = [mainStoryBoard instantiateViewControllerWithIdentifier:@"MainPageViewController"];
+        //wrapped rootViewController into NavigationController
+        UINavigationController *mainPageNav = [[UINavigationController alloc] initWithRootViewController: mainPage];
+    
+        //Replace signin page with new page by accessing window object
+        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+        [appDelegate.window.rootViewController presentViewController:mainPageNav animated:YES completion:NULL];
+        
+    }
+    */
+    
+   
     
     [PFTwitterUtils initializeWithConsumerKey:@"XHhWNEDZIVVJJpeqJE5iPGWKx"
                                consumerSecret:@"Se0RMB7HPhevHf3Jy5Y7RCnIJ4NYOefLV0MqxNLtlcQDICjFX1"];
     
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    [appDelegate buildUserInterface];
+    
     return YES;
+}
+
+//+ instead of - defines a class method
+//This method is called in didFinishLaunchingWithOptions
+//If user sign-in is successful, logs in the user into the main page.
+- (void)buildUserInterface{
+    NSString *userName = [[NSUserDefaults standardUserDefaults] stringForKey:(@"user_name")];
+    
+    //if username has a value, take them to the User Profile page (MainPageViewController)
+    if(userName != nil)
+    {
+        
+        //Navigate to MainPageViewController
+        UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *mainPage = [mainStoryBoard instantiateViewControllerWithIdentifier:@"MainPageViewController"];
+        //Create view controllers
+        UIViewController *leftSideMenu = [mainStoryBoard instantiateViewControllerWithIdentifier:@"LeftSideViewController"];
+        UIViewController *rightSideMenu = [mainStoryBoard instantiateViewControllerWithIdentifier:@"RightSideViewController"];
+        
+        
+        
+        //wrapped rootViewController into NavigationController
+        UINavigationController *mainPageNav = [[UINavigationController alloc] initWithRootViewController: mainPage];
+        UINavigationController *leftSideMenuNav = [[UINavigationController alloc] initWithRootViewController:leftSideMenu];
+        UINavigationController *rightSideMenuNav = [[UINavigationController alloc] initWithRootViewController:rightSideMenu];
+        
+        MMDrawerController *drawerContainer = [[MMDrawerController alloc] initWithCenterViewController:mainPageNav leftDrawerViewController:leftSideMenuNav rightDrawerViewController:rightSideMenuNav];
+        
+        
+        [drawerContainer setOpenDrawerGestureModeMask:MMOpenDrawerGestureModePanningCenterView];
+        [drawerContainer setCloseDrawerGestureModeMask:MMCloseDrawerGestureModePanningCenterView];
+      
+        //Replace signin page with new page by accessing window object
+       // Already inside appdelegate so no need to instantiate
+        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+
+       // UIWindow *window =  [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        [appDelegate.window.rootViewController presentViewController: drawerContainer animated:YES completion:NULL];
+        
+        
+        
+    }
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

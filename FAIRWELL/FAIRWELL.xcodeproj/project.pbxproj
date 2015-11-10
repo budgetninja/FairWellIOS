@@ -61,6 +61,12 @@
 		2D214D5B1BE21B8D00E1736A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D214D5A1BE21B8D00E1736A /* LoginViewController.swift */; };
 		2D214D861BE7585200E1736A /* FacebookSDKs-iOS-20151026 in Resources */ = {isa = PBXBuildFile; fileRef = 2D214D851BE7585200E1736A /* FacebookSDKs-iOS-20151026 */; };
 		2D214D891BE758B700E1736A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D214D881BE758B700E1736A /* MBProgressHUD.m */; };
+		2D8195E81BEDB7AE001124F9 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195E01BEDB7AE001124F9 /* MMDrawerBarButtonItem.m */; };
+		2D8195E91BEDB7AE001124F9 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195E21BEDB7AE001124F9 /* MMDrawerController.m */; };
+		2D8195EA1BEDB7AE001124F9 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195E51BEDB7AE001124F9 /* MMDrawerVisualState.m */; };
+		2D8195EB1BEDB7AE001124F9 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195E71BEDB7AE001124F9 /* UIViewController+MMDrawerController.m */; };
+		2D8195F61BF1B381001124F9 /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195F51BF1B381001124F9 /* LeftSideViewController.swift */; };
+		2D8195F81BF1B64F001124F9 /* RightSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195F71BF1B64F001124F9 /* RightSideViewController.swift */; };
 		2DF749AD1BE856390062EE40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214D6A1BE4062500E1736A /* Main.storyboard */; };
 		2DF749B31BE89C080062EE40 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF749B21BE89C080062EE40 /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -128,6 +134,17 @@
 		2D214D851BE7585200E1736A /* FacebookSDKs-iOS-20151026 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "FacebookSDKs-iOS-20151026"; sourceTree = "<group>"; };
 		2D214D871BE758B700E1736A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		2D214D881BE758B700E1736A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2D8195DF1BEDB7AE001124F9 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		2D8195E01BEDB7AE001124F9 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		2D8195E11BEDB7AE001124F9 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		2D8195E21BEDB7AE001124F9 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		2D8195E31BEDB7AE001124F9 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		2D8195E41BEDB7AE001124F9 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		2D8195E51BEDB7AE001124F9 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		2D8195E61BEDB7AE001124F9 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		2D8195E71BEDB7AE001124F9 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		2D8195F51BF1B381001124F9 /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
+		2D8195F71BF1B64F001124F9 /* RightSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightSideViewController.swift; sourceTree = "<group>"; };
 		2DF749B21BE89C080062EE40 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +199,7 @@
 		2D214C8D1BE167AF00E1736A /* FAIRWELL */ = {
 			isa = PBXGroup;
 			children = (
+				2D8195EC1BEDB7BE001124F9 /* MMDrawer */,
 				2D214CB91BE17AE200E1736A /* images */,
 				2D214C911BE167AF00E1736A /* AppDelegate.h */,
 				2D214C921BE167AF00E1736A /* AppDelegate.m */,
@@ -200,6 +218,8 @@
 				2D214D551BE1D56B00E1736A /* RegisterPageViewController.swift */,
 				2D214D5A1BE21B8D00E1736A /* LoginViewController.swift */,
 				2DF749B21BE89C080062EE40 /* MainPageViewController.swift */,
+				2D8195F51BF1B381001124F9 /* LeftSideViewController.swift */,
+				2D8195F71BF1B64F001124F9 /* RightSideViewController.swift */,
 			);
 			path = FAIRWELL;
 			sourceTree = "<group>";
@@ -269,6 +289,22 @@
 				2D214D261BE1CD7700E1736A /* ParseUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D8195EC1BEDB7BE001124F9 /* MMDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				2D8195DF1BEDB7AE001124F9 /* MMDrawerBarButtonItem.h */,
+				2D8195E01BEDB7AE001124F9 /* MMDrawerBarButtonItem.m */,
+				2D8195E11BEDB7AE001124F9 /* MMDrawerController.h */,
+				2D8195E21BEDB7AE001124F9 /* MMDrawerController.m */,
+				2D8195E31BEDB7AE001124F9 /* MMDrawerController+Subclass.h */,
+				2D8195E41BEDB7AE001124F9 /* MMDrawerVisualState.h */,
+				2D8195E51BEDB7AE001124F9 /* MMDrawerVisualState.m */,
+				2D8195E61BEDB7AE001124F9 /* UIViewController+MMDrawerController.h */,
+				2D8195E71BEDB7AE001124F9 /* UIViewController+MMDrawerController.m */,
+			);
+			name = MMDrawer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,13 +404,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8195EA1BEDB7AE001124F9 /* MMDrawerVisualState.m in Sources */,
 				2D214D5B1BE21B8D00E1736A /* LoginViewController.swift in Sources */,
 				2D214C961BE167AF00E1736A /* ViewController.m in Sources */,
 				2D214D481BE1CF8200E1736A /* MyConnector.m in Sources */,
+				2D8195F81BF1B64F001124F9 /* RightSideViewController.swift in Sources */,
+				2D8195E91BEDB7AE001124F9 /* MMDrawerController.m in Sources */,
 				2D214D561BE1D56B00E1736A /* RegisterPageViewController.swift in Sources */,
 				2D214C931BE167AF00E1736A /* AppDelegate.m in Sources */,
 				2D214CE81BE17B1700E1736A /* README.md in Sources */,
+				2D8195F61BF1B381001124F9 /* LeftSideViewController.swift in Sources */,
 				2D214C901BE167AF00E1736A /* main.m in Sources */,
+				2D8195EB1BEDB7AE001124F9 /* UIViewController+MMDrawerController.m in Sources */,
+				2D8195E81BEDB7AE001124F9 /* MMDrawerBarButtonItem.m in Sources */,
 				2DF749B31BE89C080062EE40 /* MainPageViewController.swift in Sources */,
 				2D214D891BE758B700E1736A /* MBProgressHUD.m in Sources */,
 			);

@@ -11,6 +11,8 @@ import ParseTwitterUtils
 import Parse
 
 
+
+
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
@@ -32,39 +34,53 @@ class LoginViewController: UIViewController {
         let userUsername = usernameTextField.text;
         let userPassword = passwordTextField.text;
         
+        
+        //Check for empty fields
         if(userUsername!.isEmpty || userPassword!.isEmpty)
         {
+            self.displayMyAlertMessage("All fields are required.");
             return;
         }
+        
+        
         
         //Login WITH PARSE
         PFUser.logInWithUsernameInBackground(userUsername!, password: userPassword!) {
             (user: PFUser?, error: NSError?) -> Void in
             
+            
+            MBProgressHUD.hideAllHUDsForView(self.view, animated: true);
             var userMessage = "Welcome";
             
-            if user != nil
+            if (user != nil)
             {
-                /*
+                
+                
+                //Remember the signin state!!
                 //Login is successful.
-                let userUsername:String? = user?.username
-                NSUserDefaults.standardUserDefaults().setObject(userUsername, forKey: "username");
+                let user_Username:String? = user?.username
+                NSUserDefaults.standardUserDefaults().setObject(user_Username, forKey: "user_name");
                 NSUserDefaults.standardUserDefaults().synchronize();
                 
+                /*
+                //Navigate to MainPageViewController
                 let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil);
                 
-                var mainPage:MainPageViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("MainPageViewController") as! MainPageViewController;
+                Navigate to protected page
+                var mainPage = mainStoryBoard.instantiateViewControllerWithIdentifier("MainPageViewController");
                 
                 //wrapped rootViewController into NavigationController
-                var mainPageNav = UINavigationController(rootViewController: mainPage);
-                
+                var mainPageNav = UINavigationController(rootViewController:mainPage);
+*/
+
                 //Replace signin page with new page by accessing window object
                 var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
                 
-                appDelegate.window?.rootViewController = mainPageNav;
-                */
-                
+                appDelegate.buildUserInterface();
                 /*
+                appDelegate.window?.rootViewController = mainPageNav;
+        
+                
                 NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn");
                 NSUserDefaults.standardUserDefaults().synchronize();
                 self.dismissViewControllerAnimated(true, completion: nil); //dismisses view controller
@@ -75,10 +91,11 @@ class LoginViewController: UIViewController {
             }
             else{
                 
+                //Produce error message if user attempt to login is NOT successful
                 userMessage = error!.localizedDescription;
-                
+                self.displayMyAlertMessage(userMessage);
             }
-            //self.displayMyAlertMessage(error!.localizedDescription);
+            
         }
         
         /*
