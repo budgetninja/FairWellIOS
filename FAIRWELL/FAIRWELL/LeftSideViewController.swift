@@ -85,19 +85,19 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             //Opens User Profile  page
   
             let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil);
-            var mainPageViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainPageViewController") as! MainPageViewController;
-            var leftSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("LeftSideViewController") as! LeftSideViewController;
-            var rightSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("RightSideViewController") as! RightSideViewController;
+            let mainPageViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainPageViewController") as! MainPageViewController;
+            let leftSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("LeftSideViewController") as! LeftSideViewController;
+            let rightSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("RightSideViewController") as! RightSideViewController;
     
-            var mainPageNav = UINavigationController(rootViewController: mainPageViewController);
-            var leftSideMenuNav = UINavigationController(rootViewController: leftSideMenu);
-            var rightSideMenuNav = UINavigationController(rootViewController: rightSideMenu);
+            let mainPageNav = UINavigationController(rootViewController: mainPageViewController);
+            let leftSideMenuNav = UINavigationController(rootViewController: leftSideMenu);
+            let rightSideMenuNav = UINavigationController(rootViewController: rightSideMenu);
             
             
             drawer_Container = MMDrawerController(centerViewController:mainPageNav, leftDrawerViewController:leftSideMenuNav, rightDrawerViewController: rightSideMenuNav);
             drawer_Container?.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView;
             drawer_Container?.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView;
-            var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
             appDelegate.window?.rootViewController = drawer_Container;
 
             //appDelegate.drawerContainer?.centerViewController = aboutPageNav;
@@ -116,12 +116,42 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             break;
         case 3:
             //Opens Account Setting page
+            let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil);
+            let accountSettingViewController = mainStoryboard.instantiateViewControllerWithIdentifier("AccountSettingViewController");
+            let leftSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("LeftSideViewController") as! LeftSideViewController;
+            let rightSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("RightSideViewController") as! RightSideViewController;
             
+            let accountSettingPageNav = UINavigationController(rootViewController: accountSettingViewController);
+            let leftSideMenuNav = UINavigationController(rootViewController: leftSideMenu);
+            let rightSideMenuNav = UINavigationController(rootViewController: rightSideMenu);
+            
+            
+            drawer_Container = MMDrawerController(centerViewController:accountSettingPageNav, leftDrawerViewController:leftSideMenuNav, rightDrawerViewController: rightSideMenuNav);
+            drawer_Container?.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView;
+            drawer_Container?.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView;
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+            appDelegate.window?.rootViewController = drawer_Container;
+
             
             break;
         case 4:
             //Opens Notification Setting page
+            let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil);
+            let notificationSettingViewController = mainStoryboard.instantiateViewControllerWithIdentifier("NotificationSettingViewController");
+            let leftSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("LeftSideViewController") as! LeftSideViewController;
+            let rightSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("RightSideViewController") as! RightSideViewController;
             
+            let notificationSettingPageNav = UINavigationController(rootViewController: notificationSettingViewController);
+            let leftSideMenuNav = UINavigationController(rootViewController: leftSideMenu);
+            let rightSideMenuNav = UINavigationController(rootViewController: rightSideMenu);
+            
+            
+            drawer_Container = MMDrawerController(centerViewController: notificationSettingPageNav, leftDrawerViewController:leftSideMenuNav, rightDrawerViewController: rightSideMenuNav);
+            drawer_Container?.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView;
+            drawer_Container?.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView;
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+            appDelegate.window?.rootViewController = drawer_Container;
+
             
             break;
         case 5:
@@ -131,26 +161,8 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             break;
         case 6:
             //Open the About US page
-            let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil);
-            var aboutViewController = mainStoryboard.instantiateViewControllerWithIdentifier("AboutViewController") as! AboutViewController;
-            var leftSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("LeftSideViewController") as! LeftSideViewController;
-            var rightSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("RightSideViewController") as! RightSideViewController;
-
-            var aboutPageNav = UINavigationController(rootViewController: aboutViewController);
-            var leftSideMenuNav = UINavigationController(rootViewController: leftSideMenu);
-            var rightSideMenuNav = UINavigationController(rootViewController: rightSideMenu);
-           
-            
-            drawer_Container = MMDrawerController(centerViewController:aboutPageNav, leftDrawerViewController:leftSideMenuNav, rightDrawerViewController: rightSideMenuNav);
-            drawer_Container?.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView;
-            drawer_Container?.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView;
-            var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
-            appDelegate.window?.rootViewController = drawer_Container;
-            
-            
-            //appDelegate.drawerContainer?.centerViewController = aboutPageNav;
-            //appDelegate.drawerContainer?.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil);
-            
+            let url: NSURL = NSURL(string: "http://budgetninja.github.io")!
+            UIApplication.sharedApplication().openURL(url)
             
             
             break;
@@ -170,9 +182,9 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
                 
                 //Navigate to log in page
                 let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil);
-                var loginPage:LoginViewController = mainStoryboard.instantiateViewControllerWithIdentifier("LoginViewController") as! LoginViewController;
-                var loginPageNav = UINavigationController(rootViewController: loginPage);
-                var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+                let loginPage:LoginViewController = mainStoryboard.instantiateViewControllerWithIdentifier("LoginViewController") as! LoginViewController;
+                let loginPageNav = UINavigationController(rootViewController: loginPage);
+                let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
                 appDelegate.window?.rootViewController = loginPageNav;
             }
             break;
