@@ -24,6 +24,8 @@
 @implementation AppDelegate
 
 
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
@@ -68,7 +70,7 @@
     return YES;
 }
 
-//+ instead of - defines a class method
+
 //This method is called in didFinishLaunchingWithOptions
 //If user sign-in is successful, logs in the user into the main page.
 - (void)buildUserInterface{
@@ -92,6 +94,9 @@
         UINavigationController *leftSideMenuNav = [[UINavigationController alloc] initWithRootViewController:leftSideMenu];
         UINavigationController *rightSideMenuNav = [[UINavigationController alloc] initWithRootViewController:rightSideMenu];
         
+      
+        
+      
         MMDrawerController *drawerContainer = [[MMDrawerController alloc] initWithCenterViewController:mainPageNav leftDrawerViewController:leftSideMenuNav rightDrawerViewController:rightSideMenuNav];
         
         
@@ -99,12 +104,12 @@
         [drawerContainer setCloseDrawerGestureModeMask:MMCloseDrawerGestureModePanningCenterView];
       
         //Replace signin page with new page by accessing window object
-       // Already inside appdelegate so no need to instantiate
         AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-
-       // UIWindow *window =  [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        
+        
         [appDelegate.window.rootViewController presentViewController: drawerContainer animated:YES completion:NULL];
         
+        [appDelegate.window makeKeyAndVisible];
         
         
     }

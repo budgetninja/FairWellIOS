@@ -48,7 +48,7 @@ class RegisterPageViewController: UIViewController, UIImagePickerControllerDeleg
 
 
     @IBAction func uploadImageButtonTapped(sender: AnyObject) {
-        var myPickerController = UIImagePickerController()
+        let myPickerController = UIImagePickerController()
         myPickerController.delegate = self;
         myPickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
             
@@ -153,7 +153,7 @@ class RegisterPageViewController: UIViewController, UIImagePickerControllerDeleg
             }
             
             
-            var myAlert = UIAlertController(title:"Alert", message: userMessage, preferredStyle:UIAlertControllerStyle.Alert);
+            let myAlert = UIAlertController(title:"Alert", message: userMessage, preferredStyle:UIAlertControllerStyle.Alert);
             
             let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.Default){ action in
                 if(success)
@@ -174,7 +174,7 @@ class RegisterPageViewController: UIViewController, UIImagePickerControllerDeleg
 
     func displayMyAlertMessage(userMessage:String)
     {
-        var myAlert = UIAlertController(title:"Alert", message: userMessage, preferredStyle:UIAlertControllerStyle.Alert);
+        let myAlert = UIAlertController(title:"Alert", message: userMessage, preferredStyle:UIAlertControllerStyle.Alert);
         let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.Default, handler:nil);
         
         myAlert.addAction(okAction);

@@ -42,6 +42,10 @@ class LoginViewController: UIViewController {
             return;
         }
         
+        //
+        let spinningActivity = MBProgressHUD.showHUDAddedTo(self.view, animated:true);
+        spinningActivity.labelText = "Sending data..";
+        spinningActivity.detailsLabelText = "Please wait a moment";
         
         
         //Login WITH PARSE
@@ -51,6 +55,7 @@ class LoginViewController: UIViewController {
             
             MBProgressHUD.hideAllHUDsForView(self.view, animated: true);
             var userMessage = "Welcome";
+            
             
             if (user != nil)
             {
@@ -74,7 +79,7 @@ class LoginViewController: UIViewController {
 */
 
                 //Replace signin page with new page by accessing window object
-                var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+                let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
                 
                 appDelegate.buildUserInterface();
                 /*
@@ -118,7 +123,7 @@ class LoginViewController: UIViewController {
     
     func displayMyAlertMessage(userMessage:String)
     {
-        var myAlert = UIAlertController(title:"Alert", message: userMessage, preferredStyle:UIAlertControllerStyle.Alert);
+        let myAlert = UIAlertController(title:"Alert", message: userMessage, preferredStyle:UIAlertControllerStyle.Alert);
         let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.Default, handler:nil);
         
         myAlert.addAction(okAction);

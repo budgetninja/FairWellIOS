@@ -7,7 +7,7 @@
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="FAIRWELL" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="Login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="FAIRWELL" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="68O-bJ-rdh"/>
                         <viewControllerLayoutGuide type="bottom" id="gHo-Xv-oDX"/>
@@ -275,7 +275,7 @@
         <!--Navigation-->
         <scene sceneID="TVZ-xu-SsC">
             <objects>
-                <viewController storyboardIdentifier="LeftSideViewController" id="Uei-J0-9S9" customClass="LeftSideViewController" customModule="FAIRWELL" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LeftSideViewController" id="Uei-J0-9S9" customClass="LeftSideViewController" customModule="FAIRWELL" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hqi-2d-3LX"/>
                         <viewControllerLayoutGuide type="bottom" id="KAg-9y-0VY"/>
@@ -297,7 +297,7 @@
                                 <rect key="frame" x="0.0" y="146" width="320" height="422"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="0gX-oB-vQb">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="0gX-oB-vQb">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0gX-oB-vQb" id="Qzv-uo-viz">
@@ -308,6 +308,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="Uei-J0-9S9" id="fm5-7i-w2W"/>
+                                    <outlet property="delegate" destination="Uei-J0-9S9" id="SZE-HS-VYO"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -504,10 +505,10 @@
             </objects>
             <point key="canvasLocation" x="-51" y="1660"/>
         </scene>
-        <!--View Controller-->
+        <!--Notification Setting View Controller-->
         <scene sceneID="vdT-Ua-7aH">
             <objects>
-                <viewController id="tOE-IY-kzN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotificationSettingViewController" id="tOE-IY-kzN" customClass="NotificationSettingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QrW-8K-Qt7"/>
                         <viewControllerLayoutGuide type="bottom" id="abJ-t2-mNN"/>
@@ -948,7 +949,7 @@
         <!--User Profile-->
         <scene sceneID="VSK-sL-MJm">
             <objects>
-                <viewController storyboardIdentifier="MainPageViewController" title="User Profile" id="k8a-E9-UfI" customClass="MainPageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainPageViewController" title="User Profile" id="k8a-E9-UfI" customClass="MainPageViewController" customModule="FAIRWELL" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yxd-2n-sh6"/>
                         <viewControllerLayoutGuide type="bottom" id="x1T-88-5Ob"/>
@@ -1008,10 +1009,10 @@
             </objects>
             <point key="canvasLocation" x="698" y="988"/>
         </scene>
-        <!--View Controller-->
+        <!--Account Setting View Controller-->
         <scene sceneID="YLu-xL-aF8">
             <objects>
-                <viewController id="VtJ-dx-xYp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountSettingViewController" id="VtJ-dx-xYp" customClass="AccountSettingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WKg-PY-Diu"/>
                         <viewControllerLayoutGuide type="bottom" id="J3x-mB-fxC"/>
@@ -1190,6 +1191,25 @@
             </objects>
             <point key="canvasLocation" x="934" y="1660"/>
         </scene>
+        <!--About-->
+        <scene sceneID="0cd-eR-wWN">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewController" id="cZe-dH-nMC" customClass="AboutViewController" customModule="FAIRWELL" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rOB-KE-zeO"/>
+                        <viewControllerLayoutGuide type="bottom" id="kCb-jP-foO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fFH-rg-FnE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="pW7-dU-QaN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="My1-cQ-v5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1904" y="1660"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="XET-bm-APa">
             <objects>
@@ -1261,6 +1281,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AdW-VG-tHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1944" y="976"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5rj-gW-iCn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vea-wA-q8D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jzm-Jj-eb4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cZe-dH-nMC" kind="relationship" relationship="rootViewController" id="I1v-Wd-pEi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Dc-Ys-QBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522" y="1660"/>
         </scene>
     </scenes>
     <resources>

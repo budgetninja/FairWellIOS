@@ -11,7 +11,6 @@
 		2D214C931BE167AF00E1736A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D214C921BE167AF00E1736A /* AppDelegate.m */; };
 		2D214C961BE167AF00E1736A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D214C951BE167AF00E1736A /* ViewController.m */; };
 		2D214C9B1BE167AF00E1736A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D214C9A1BE167AF00E1736A /* Assets.xcassets */; };
-		2D214C9E1BE167AF00E1736A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214C9C1BE167AF00E1736A /* LaunchScreen.storyboard */; };
 		2D214CD31BE17B1600E1736A /* app-logo.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2D214CBA1BE17B1600E1736A /* app-logo.PNG */; };
 		2D214CD41BE17B1600E1736A /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D214CBB1BE17B1600E1736A /* appicon.png */; };
 		2D214CD51BE17B1600E1736A /* concat_pics.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D214CBC1BE17B1600E1736A /* concat_pics.jpg */; };
@@ -67,8 +66,10 @@
 		2D8195EB1BEDB7AE001124F9 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195E71BEDB7AE001124F9 /* UIViewController+MMDrawerController.m */; };
 		2D8195F61BF1B381001124F9 /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195F51BF1B381001124F9 /* LeftSideViewController.swift */; };
 		2D8195F81BF1B64F001124F9 /* RightSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195F71BF1B64F001124F9 /* RightSideViewController.swift */; };
+		2D8195FA1BF2700B001124F9 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195F91BF2700B001124F9 /* AboutViewController.swift */; };
+		2D8195FB1BF28537001124F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214C9C1BE167AF00E1736A /* LaunchScreen.storyboard */; };
+		2D8195FC1BF2B889001124F9 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF749B21BE89C080062EE40 /* MainPageViewController.swift */; };
 		2DF749AD1BE856390062EE40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214D6A1BE4062500E1736A /* Main.storyboard */; };
-		2DF749B31BE89C080062EE40 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF749B21BE89C080062EE40 /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +146,7 @@
 		2D8195E71BEDB7AE001124F9 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		2D8195F51BF1B381001124F9 /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
 		2D8195F71BF1B64F001124F9 /* RightSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightSideViewController.swift; sourceTree = "<group>"; };
+		2D8195F91BF2700B001124F9 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		2DF749B21BE89C080062EE40 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +222,7 @@
 				2DF749B21BE89C080062EE40 /* MainPageViewController.swift */,
 				2D8195F51BF1B381001124F9 /* LeftSideViewController.swift */,
 				2D8195F71BF1B64F001124F9 /* RightSideViewController.swift */,
+				2D8195F91BF2700B001124F9 /* AboutViewController.swift */,
 			);
 			path = FAIRWELL;
 			sourceTree = "<group>";
@@ -376,7 +379,6 @@
 				2DF749AD1BE856390062EE40 /* Main.storyboard in Resources */,
 				2D214CE21BE17B1600E1736A /* icon_6a.jpg in Resources */,
 				2D214CE91BE17B1700E1736A /* register_button.png in Resources */,
-				2D214C9E1BE167AF00E1736A /* LaunchScreen.storyboard in Resources */,
 				2D214CEA1BE17B1700E1736A /* title.PNG in Resources */,
 				2D214CDB1BE17B1600E1736A /* icon_3.jpg in Resources */,
 				2D214CDF1BE17B1600E1736A /* icon_5.jpg in Resources */,
@@ -392,6 +394,7 @@
 				2D214CD61BE17B1600E1736A /* facebook_button.png in Resources */,
 				2D214CDE1BE17B1600E1736A /* icon_4a.jpg in Resources */,
 				2D214CE01BE17B1600E1736A /* icon_5a.jpg in Resources */,
+				2D8195FB1BF28537001124F9 /* LaunchScreen.storyboard in Resources */,
 				2D214CE41BE17B1600E1736A /* icon_7a.jpg in Resources */,
 				2D214CD91BE17B1600E1736A /* icon_2.jpg in Resources */,
 			);
@@ -404,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8195FC1BF2B889001124F9 /* MainPageViewController.swift in Sources */,
 				2D8195EA1BEDB7AE001124F9 /* MMDrawerVisualState.m in Sources */,
 				2D214D5B1BE21B8D00E1736A /* LoginViewController.swift in Sources */,
 				2D214C961BE167AF00E1736A /* ViewController.m in Sources */,
@@ -417,7 +421,7 @@
 				2D214C901BE167AF00E1736A /* main.m in Sources */,
 				2D8195EB1BEDB7AE001124F9 /* UIViewController+MMDrawerController.m in Sources */,
 				2D8195E81BEDB7AE001124F9 /* MMDrawerBarButtonItem.m in Sources */,
-				2DF749B31BE89C080062EE40 /* MainPageViewController.swift in Sources */,
+				2D8195FA1BF2700B001124F9 /* AboutViewController.swift in Sources */,
 				2D214D891BE758B700E1736A /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +526,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_X86_VECTOR_INSTRUCTIONS = default;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -545,6 +550,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_X86_VECTOR_INSTRUCTIONS = default;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
