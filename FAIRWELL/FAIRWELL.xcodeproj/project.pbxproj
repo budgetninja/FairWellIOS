@@ -30,7 +30,7 @@
 		2D214CE31BE17B1600E1736A /* icon_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D214CCA1BE17B1600E1736A /* icon_7.jpg */; };
 		2D214CE41BE17B1600E1736A /* icon_7a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D214CCB1BE17B1600E1736A /* icon_7a.jpg */; };
 		2D214CE51BE17B1700E1736A /* login_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D214CCC1BE17B1600E1736A /* login_button.png */; };
-		2D214CE61BE17B1700E1736A /* nav-icon (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 2D214CCD1BE17B1600E1736A /* nav-icon (1).png */; };
+		2D214CE61BE17B1700E1736A /* nav-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D214CCD1BE17B1600E1736A /* nav-icon.png */; };
 		2D214CE71BE17B1700E1736A /* profilepic.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D214CCE1BE17B1600E1736A /* profilepic.png */; };
 		2D214CE81BE17B1700E1736A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2D214CCF1BE17B1600E1736A /* README.md */; };
 		2D214CE91BE17B1700E1736A /* register_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D214CD01BE17B1600E1736A /* register_button.png */; };
@@ -71,6 +71,10 @@
 		2D8195FC1BF2B889001124F9 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF749B21BE89C080062EE40 /* MainPageViewController.swift */; };
 		2D8195FE1BF35311001124F9 /* AccountSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195FD1BF35311001124F9 /* AccountSettingViewController.swift */; };
 		2D8196001BF35430001124F9 /* NotificationSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195FF1BF35430001124F9 /* NotificationSettingViewController.swift */; };
+		2D8196021BF3CA72001124F9 /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8196011BF3CA72001124F9 /* menu-icon.png */; };
+		2D8196041BF3D47E001124F9 /* behind_alert_view.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8196031BF3D47E001124F9 /* behind_alert_view.png */; };
+		2D8196061BF3D688001124F9 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8196051BF3D688001124F9 /* ResetPasswordViewController.swift */; };
+		2D8196081BF3D924001124F9 /* whitebackgroundwithdots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D8196071BF3D924001124F9 /* whitebackgroundwithdots.jpg */; };
 		2DF749AD1BE856390062EE40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214D6A1BE4062500E1736A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -103,7 +107,7 @@
 		2D214CCA1BE17B1600E1736A /* icon_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon_7.jpg; sourceTree = "<group>"; };
 		2D214CCB1BE17B1600E1736A /* icon_7a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon_7a.jpg; sourceTree = "<group>"; };
 		2D214CCC1BE17B1600E1736A /* login_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_button.png; sourceTree = "<group>"; };
-		2D214CCD1BE17B1600E1736A /* nav-icon (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-icon (1).png"; sourceTree = "<group>"; };
+		2D214CCD1BE17B1600E1736A /* nav-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-icon.png"; sourceTree = "<group>"; };
 		2D214CCE1BE17B1600E1736A /* profilepic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profilepic.png; sourceTree = "<group>"; };
 		2D214CCF1BE17B1600E1736A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2D214CD01BE17B1600E1736A /* register_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = register_button.png; sourceTree = "<group>"; };
@@ -151,6 +155,10 @@
 		2D8195F91BF2700B001124F9 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		2D8195FD1BF35311001124F9 /* AccountSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingViewController.swift; sourceTree = "<group>"; };
 		2D8195FF1BF35430001124F9 /* NotificationSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSettingViewController.swift; sourceTree = "<group>"; };
+		2D8196011BF3CA72001124F9 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
+		2D8196031BF3D47E001124F9 /* behind_alert_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = behind_alert_view.png; sourceTree = "<group>"; };
+		2D8196051BF3D688001124F9 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		2D8196071BF3D924001124F9 /* whitebackgroundwithdots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whitebackgroundwithdots.jpg; sourceTree = "<group>"; };
 		2DF749B21BE89C080062EE40 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -229,6 +237,7 @@
 				2D8195F91BF2700B001124F9 /* AboutViewController.swift */,
 				2D8195FD1BF35311001124F9 /* AccountSettingViewController.swift */,
 				2D8195FF1BF35430001124F9 /* NotificationSettingViewController.swift */,
+				2D8196051BF3D688001124F9 /* ResetPasswordViewController.swift */,
 			);
 			path = FAIRWELL;
 			sourceTree = "<group>";
@@ -244,6 +253,7 @@
 		2D214CB91BE17AE200E1736A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				2D8196031BF3D47E001124F9 /* behind_alert_view.png */,
 				2D214CBA1BE17B1600E1736A /* app-logo.PNG */,
 				2D214CBB1BE17B1600E1736A /* appicon.png */,
 				2D214CBC1BE17B1600E1736A /* concat_pics.jpg */,
@@ -263,9 +273,11 @@
 				2D214CCA1BE17B1600E1736A /* icon_7.jpg */,
 				2D214CCB1BE17B1600E1736A /* icon_7a.jpg */,
 				2D214CCC1BE17B1600E1736A /* login_button.png */,
-				2D214CCD1BE17B1600E1736A /* nav-icon (1).png */,
+				2D8196011BF3CA72001124F9 /* menu-icon.png */,
+				2D214CCD1BE17B1600E1736A /* nav-icon.png */,
 				2D214CCE1BE17B1600E1736A /* profilepic.png */,
 				2D214CCF1BE17B1600E1736A /* README.md */,
+				2D8196071BF3D924001124F9 /* whitebackgroundwithdots.jpg */,
 				2D214CD01BE17B1600E1736A /* register_button.png */,
 				2D214CD11BE17B1600E1736A /* title.PNG */,
 				2D214CD21BE17B1600E1736A /* twitter_button.png */,
@@ -377,10 +389,11 @@
 			files = (
 				2D214CD51BE17B1600E1736A /* concat_pics.jpg in Resources */,
 				2D214CDC1BE17B1600E1736A /* icon_3a.jpg in Resources */,
-				2D214CE61BE17B1700E1736A /* nav-icon (1).png in Resources */,
+				2D214CE61BE17B1700E1736A /* nav-icon.png in Resources */,
 				2D214CD41BE17B1600E1736A /* appicon.png in Resources */,
 				2D214CD71BE17B1600E1736A /* icon_1.jpg in Resources */,
 				2D214CE31BE17B1600E1736A /* icon_7.jpg in Resources */,
+				2D8196021BF3CA72001124F9 /* menu-icon.png in Resources */,
 				2D214CE71BE17B1700E1736A /* profilepic.png in Resources */,
 				2DF749AD1BE856390062EE40 /* Main.storyboard in Resources */,
 				2D214CE21BE17B1600E1736A /* icon_6a.jpg in Resources */,
@@ -389,6 +402,7 @@
 				2D214CDB1BE17B1600E1736A /* icon_3.jpg in Resources */,
 				2D214CDF1BE17B1600E1736A /* icon_5.jpg in Resources */,
 				2D214D861BE7585200E1736A /* FacebookSDKs-iOS-20151026 in Resources */,
+				2D8196041BF3D47E001124F9 /* behind_alert_view.png in Resources */,
 				2D214CE11BE17B1600E1736A /* icon_6.jpg in Resources */,
 				2D214C9B1BE167AF00E1736A /* Assets.xcassets in Resources */,
 				2D214CEB1BE17B1700E1736A /* twitter_button.png in Resources */,
@@ -399,6 +413,7 @@
 				2D214CDD1BE17B1600E1736A /* icon_4.jpg in Resources */,
 				2D214CD61BE17B1600E1736A /* facebook_button.png in Resources */,
 				2D214CDE1BE17B1600E1736A /* icon_4a.jpg in Resources */,
+				2D8196081BF3D924001124F9 /* whitebackgroundwithdots.jpg in Resources */,
 				2D214CE01BE17B1600E1736A /* icon_5a.jpg in Resources */,
 				2D8195FB1BF28537001124F9 /* LaunchScreen.storyboard in Resources */,
 				2D214CE41BE17B1600E1736A /* icon_7a.jpg in Resources */,
@@ -426,6 +441,7 @@
 				2D214C931BE167AF00E1736A /* AppDelegate.m in Sources */,
 				2D214CE81BE17B1700E1736A /* README.md in Sources */,
 				2D8195F61BF1B381001124F9 /* LeftSideViewController.swift in Sources */,
+				2D8196061BF3D688001124F9 /* ResetPasswordViewController.swift in Sources */,
 				2D214C901BE167AF00E1736A /* main.m in Sources */,
 				2D8195EB1BEDB7AE001124F9 /* UIViewController+MMDrawerController.m in Sources */,
 				2D8195E81BEDB7AE001124F9 /* MMDrawerBarButtonItem.m in Sources */,

@@ -20,6 +20,7 @@ class MainPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         
+        
         //Putting user's full name onto User Profile page
         let userFirstName = PFUser.currentUser()!.objectForKey("First_Name") as! String;
         let userLastName = PFUser.currentUser()!.objectForKey("Last_Name") as! String;
@@ -47,5 +48,26 @@ class MainPageViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         
     }
+    
+    @IBAction func leftSideButtonTapped(sender: AnyObject) {
+        
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+        self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 }

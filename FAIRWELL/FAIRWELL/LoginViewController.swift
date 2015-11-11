@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext;
 
         // Do any additional setup after loading the view.
     }
@@ -44,8 +45,8 @@ class LoginViewController: UIViewController {
         
         //
         let spinningActivity = MBProgressHUD.showHUDAddedTo(self.view, animated:true);
-        spinningActivity.labelText = "Sending data..";
-        spinningActivity.detailsLabelText = "Please wait a moment";
+        spinningActivity.labelText = "Sending data";
+        spinningActivity.detailsLabelText = "Please wait";
         
         
         //Login WITH PARSE
@@ -253,5 +254,28 @@ class LoginViewController: UIViewController {
     
     }
     
+    
+    
+    
+    
+    //Forgot Password? clicked which then leads to module view
+    
+    override func prepareForSegue(segue:UIStoryboardSegue, sender: AnyObject?) {
+        let newVC:UIViewController = segue.destinationViewController
+        LoginViewController.setPresentationStyleForSelfController(self, presentingController: newVC)
+    }
+    
+    class func setPresentationStyleForSelfController(selfController: UIViewController, presentingController: UIViewController) {
+        if NSProcessInfo.instancesRespondToSelector("isOperatingSystemAtLeastVersion:")
+        {
+            presentingController.providesPresentationContextTransitionStyle = true
+            presentingController.definesPresentationContext = true
+            presentingController.modalPresentationStyle =  UIModalPresentationStyle.OverCurrentContext;
+        }
+        else {
+            selfController.modalPresentationStyle =  UIModalPresentationStyle.CurrentContext;
+            selfController.navigationController!.modalPresentationStyle = UIModalPresentationStyle.CurrentContext;
+        }
+    }
     
 }

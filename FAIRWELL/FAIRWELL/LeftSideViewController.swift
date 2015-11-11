@@ -83,7 +83,7 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
         {
         case 0:
             //Opens User Profile  page
-  
+  /*
             let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil);
             let mainPageViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainPageViewController") as! MainPageViewController;
             let leftSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("LeftSideViewController") as! LeftSideViewController;
@@ -99,9 +99,15 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             drawer_Container?.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView;
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
             appDelegate.window?.rootViewController = drawer_Container;
-
+*/
             //appDelegate.drawerContainer?.centerViewController = aboutPageNav;
             //appDelegate.drawerContainer?.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil);
+            
+            let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil);
+            let mainPageViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainPageViewController");
+            let mainPageNav = UINavigationController(rootViewController: mainPageViewController);
+            self.mm_drawerController.centerViewController = mainPageNav;
+            self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
             
             break;
         case 1:
@@ -117,40 +123,21 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
         case 3:
             //Opens Account Setting page
             let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil);
-            let accountSettingViewController = mainStoryboard.instantiateViewControllerWithIdentifier("AccountSettingViewController");
-            let leftSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("LeftSideViewController") as! LeftSideViewController;
-            let rightSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("RightSideViewController") as! RightSideViewController;
+            let accountSettingPageViewController = mainStoryboard.instantiateViewControllerWithIdentifier("AccountSettingViewController");
+            let accountSettingPageNav = UINavigationController(rootViewController: accountSettingPageViewController);
+            self.mm_drawerController.centerViewController = accountSettingPageNav;
+            self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
             
-            let accountSettingPageNav = UINavigationController(rootViewController: accountSettingViewController);
-            let leftSideMenuNav = UINavigationController(rootViewController: leftSideMenu);
-            let rightSideMenuNav = UINavigationController(rootViewController: rightSideMenu);
-            
-            
-            drawer_Container = MMDrawerController(centerViewController:accountSettingPageNav, leftDrawerViewController:leftSideMenuNav, rightDrawerViewController: rightSideMenuNav);
-            drawer_Container?.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView;
-            drawer_Container?.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView;
-            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
-            appDelegate.window?.rootViewController = drawer_Container;
-
             
             break;
         case 4:
             //Opens Notification Setting page
             let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil);
             let notificationSettingViewController = mainStoryboard.instantiateViewControllerWithIdentifier("NotificationSettingViewController");
-            let leftSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("LeftSideViewController") as! LeftSideViewController;
-            let rightSideMenu = mainStoryboard.instantiateViewControllerWithIdentifier("RightSideViewController") as! RightSideViewController;
-            
             let notificationSettingPageNav = UINavigationController(rootViewController: notificationSettingViewController);
-            let leftSideMenuNav = UINavigationController(rootViewController: leftSideMenu);
-            let rightSideMenuNav = UINavigationController(rootViewController: rightSideMenu);
+            self.mm_drawerController.centerViewController = notificationSettingPageNav;
+            self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
             
-            
-            drawer_Container = MMDrawerController(centerViewController: notificationSettingPageNav, leftDrawerViewController:leftSideMenuNav, rightDrawerViewController: rightSideMenuNav);
-            drawer_Container?.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView;
-            drawer_Container?.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView;
-            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
-            appDelegate.window?.rootViewController = drawer_Container;
 
             
             break;
@@ -178,7 +165,7 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             spinningActivity.detailsLabelText = "Please wait";
             
             PFUser.logOutInBackgroundWithBlock{ (error:NSError?) -> Void in
-                spinningActivity.hide(true);
+                MBProgressHUD.hideAllHUDsForView(self.view, animated: true);
                 
                 //Navigate to log in page
                 let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil);
