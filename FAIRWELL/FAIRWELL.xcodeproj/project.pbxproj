@@ -75,6 +75,7 @@
 		2D91A39B1BF3ECA300475121 /* behind_alert_view.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D91A39A1BF3ECA300475121 /* behind_alert_view.png */; };
 		2D91A39D1BF3ECAC00475121 /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D91A39C1BF3ECAC00475121 /* menu-icon.png */; };
 		2D91A39F1BF3ED6F00475121 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91A39E1BF3ED6F00475121 /* ResetPasswordViewController.swift */; };
+		2D91A3A31BF3F5D900475121 /* gradientforLogin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D91A3A21BF3F5D900475121 /* gradientforLogin.jpg */; };
 		2DF749AD1BE856390062EE40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214D6A1BE4062500E1736A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -159,6 +160,7 @@
 		2D91A39A1BF3ECA300475121 /* behind_alert_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = behind_alert_view.png; sourceTree = "<group>"; };
 		2D91A39C1BF3ECAC00475121 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
 		2D91A39E1BF3ED6F00475121 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		2D91A3A21BF3F5D900475121 /* gradientforLogin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gradientforLogin.jpg; sourceTree = "<group>"; };
 		2DF749B21BE89C080062EE40 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -253,6 +255,7 @@
 		2D214CB91BE17AE200E1736A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				2D91A3A21BF3F5D900475121 /* gradientforLogin.jpg */,
 				2D214CBA1BE17B1600E1736A /* app-logo.PNG */,
 				2D214CBB1BE17B1600E1736A /* appicon.png */,
 				2D214CBC1BE17B1600E1736A /* concat_pics.jpg */,
@@ -407,6 +410,7 @@
 				2D214C9B1BE167AF00E1736A /* Assets.xcassets in Resources */,
 				2D214CEB1BE17B1700E1736A /* twitter_button.png in Resources */,
 				2D214CE51BE17B1700E1736A /* login_button.png in Resources */,
+				2D91A3A31BF3F5D900475121 /* gradientforLogin.jpg in Resources */,
 				2D214CDA1BE17B1600E1736A /* icon_2a.jpg in Resources */,
 				2D214CD31BE17B1600E1736A /* app-logo.PNG in Resources */,
 				2D214CD81BE17B1600E1736A /* icon_1a.jpg in Resources */,
