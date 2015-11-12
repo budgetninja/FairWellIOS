@@ -117,7 +117,7 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             break;
         case 2:
             //Opens Smart Solve! page
-            
+            //COMING SOON
             
             break;
         case 3:
@@ -143,14 +143,13 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             break;
         case 5:
             //Opens Rate the App page
-            
+            //COMING SOON.
             
             break;
         case 6:
             //Open the About US page
             let url: NSURL = NSURL(string: "http://budgetninja.github.io")!
             UIApplication.sharedApplication().openURL(url)
-            
             
             break;
             

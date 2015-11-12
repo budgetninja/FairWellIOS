@@ -20,6 +20,8 @@ class MainPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         
+        
+        
         //Putting user's full name onto User Profile page
         let userFirstName = PFUser.currentUser()!.objectForKey("First_Name") as! String;
         let userLastName = PFUser.currentUser()!.objectForKey("Last_Name") as! String;
@@ -41,6 +43,11 @@ class MainPageViewController: UIViewController {
               
             }
         }
+        /*
+        //Setting navigation bar color
+        let navBarColor = UIColor(red: 0.376, green:0.686, blue:0.675, alpha:1); //hex #: 60afac
+        self.navigationController!.navigationBar.barTintColor = navBarColor;
+        self.navigationController!.navigationBar.translucent = false;*/
         
     }
     

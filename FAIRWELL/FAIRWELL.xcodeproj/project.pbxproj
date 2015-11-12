@@ -66,7 +66,6 @@
 		2D8195EB1BEDB7AE001124F9 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195E71BEDB7AE001124F9 /* UIViewController+MMDrawerController.m */; };
 		2D8195F61BF1B381001124F9 /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195F51BF1B381001124F9 /* LeftSideViewController.swift */; };
 		2D8195F81BF1B64F001124F9 /* RightSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195F71BF1B64F001124F9 /* RightSideViewController.swift */; };
-		2D8195FA1BF2700B001124F9 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195F91BF2700B001124F9 /* AboutViewController.swift */; };
 		2D8195FB1BF28537001124F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214C9C1BE167AF00E1736A /* LaunchScreen.storyboard */; };
 		2D8195FC1BF2B889001124F9 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF749B21BE89C080062EE40 /* MainPageViewController.swift */; };
 		2D8195FE1BF35311001124F9 /* AccountSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8195FD1BF35311001124F9 /* AccountSettingViewController.swift */; };
@@ -76,6 +75,8 @@
 		2D91A39D1BF3ECAC00475121 /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D91A39C1BF3ECAC00475121 /* menu-icon.png */; };
 		2D91A39F1BF3ED6F00475121 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91A39E1BF3ED6F00475121 /* ResetPasswordViewController.swift */; };
 		2D91A3A31BF3F5D900475121 /* gradientforLogin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D91A3A21BF3F5D900475121 /* gradientforLogin.jpg */; };
+		2D91A3A91BF4227800475121 /* AccountSettingCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91A3A81BF4227800475121 /* AccountSettingCustomCell.swift */; };
+		2D91A3AB1BF434BD00475121 /* NotificationSettingCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91A3AA1BF434BD00475121 /* NotificationSettingCustomCell.swift */; };
 		2DF749AD1BE856390062EE40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214D6A1BE4062500E1736A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -153,7 +154,6 @@
 		2D8195E71BEDB7AE001124F9 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		2D8195F51BF1B381001124F9 /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
 		2D8195F71BF1B64F001124F9 /* RightSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightSideViewController.swift; sourceTree = "<group>"; };
-		2D8195F91BF2700B001124F9 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		2D8195FD1BF35311001124F9 /* AccountSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingViewController.swift; sourceTree = "<group>"; };
 		2D8195FF1BF35430001124F9 /* NotificationSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSettingViewController.swift; sourceTree = "<group>"; };
 		2D91A3981BF3EC9E00475121 /* whitebackgroundwithdots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whitebackgroundwithdots.jpg; sourceTree = "<group>"; };
@@ -161,6 +161,8 @@
 		2D91A39C1BF3ECAC00475121 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
 		2D91A39E1BF3ED6F00475121 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		2D91A3A21BF3F5D900475121 /* gradientforLogin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gradientforLogin.jpg; sourceTree = "<group>"; };
+		2D91A3A81BF4227800475121 /* AccountSettingCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingCustomCell.swift; sourceTree = "<group>"; };
+		2D91A3AA1BF434BD00475121 /* NotificationSettingCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSettingCustomCell.swift; sourceTree = "<group>"; };
 		2DF749B21BE89C080062EE40 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,9 +238,10 @@
 				2DF749B21BE89C080062EE40 /* MainPageViewController.swift */,
 				2D8195F51BF1B381001124F9 /* LeftSideViewController.swift */,
 				2D8195F71BF1B64F001124F9 /* RightSideViewController.swift */,
-				2D8195F91BF2700B001124F9 /* AboutViewController.swift */,
 				2D8195FD1BF35311001124F9 /* AccountSettingViewController.swift */,
+				2D91A3A81BF4227800475121 /* AccountSettingCustomCell.swift */,
 				2D8195FF1BF35430001124F9 /* NotificationSettingViewController.swift */,
+				2D91A3AA1BF434BD00475121 /* NotificationSettingCustomCell.swift */,
 				2D91A39E1BF3ED6F00475121 /* ResetPasswordViewController.swift */,
 			);
 			path = FAIRWELL;
@@ -438,18 +441,19 @@
 				2D8195EA1BEDB7AE001124F9 /* MMDrawerVisualState.m in Sources */,
 				2D214D5B1BE21B8D00E1736A /* LoginViewController.swift in Sources */,
 				2D214C961BE167AF00E1736A /* ViewController.m in Sources */,
+				2D91A3AB1BF434BD00475121 /* NotificationSettingCustomCell.swift in Sources */,
 				2D214D481BE1CF8200E1736A /* MyConnector.m in Sources */,
 				2D8195F81BF1B64F001124F9 /* RightSideViewController.swift in Sources */,
 				2D8195E91BEDB7AE001124F9 /* MMDrawerController.m in Sources */,
 				2D214D561BE1D56B00E1736A /* RegisterPageViewController.swift in Sources */,
 				2D214C931BE167AF00E1736A /* AppDelegate.m in Sources */,
+				2D91A3A91BF4227800475121 /* AccountSettingCustomCell.swift in Sources */,
 				2D214CE81BE17B1700E1736A /* README.md in Sources */,
 				2D8195F61BF1B381001124F9 /* LeftSideViewController.swift in Sources */,
 				2D91A39F1BF3ED6F00475121 /* ResetPasswordViewController.swift in Sources */,
 				2D214C901BE167AF00E1736A /* main.m in Sources */,
 				2D8195EB1BEDB7AE001124F9 /* UIViewController+MMDrawerController.m in Sources */,
 				2D8195E81BEDB7AE001124F9 /* MMDrawerBarButtonItem.m in Sources */,
-				2D8195FA1BF2700B001124F9 /* AboutViewController.swift in Sources */,
 				2D214D891BE758B700E1736A /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
