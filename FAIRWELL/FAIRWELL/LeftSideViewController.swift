@@ -123,8 +123,8 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
         case 3:
             //Opens Account Setting page
             let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil);
-            let accountSettingPageViewController = mainStoryboard.instantiateViewControllerWithIdentifier("AccountSettingViewController");
-            let accountSettingPageNav = UINavigationController(rootViewController: accountSettingPageViewController);
+            let accountSettingsPageViewController = mainStoryboard.instantiateViewControllerWithIdentifier("AccountSettingsViewController");
+            let accountSettingPageNav = UINavigationController(rootViewController: accountSettingsPageViewController);
             self.mm_drawerController.centerViewController = accountSettingPageNav;
             self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
             
@@ -133,7 +133,7 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
         case 4:
             //Opens Notification Setting page
             let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil);
-            let notificationSettingViewController = mainStoryboard.instantiateViewControllerWithIdentifier("NotificationSettingViewController");
+            let notificationSettingViewController = mainStoryboard.instantiateViewControllerWithIdentifier("NotificationSettingsViewController");
             let notificationSettingPageNav = UINavigationController(rootViewController: notificationSettingViewController);
             self.mm_drawerController.centerViewController = notificationSettingPageNav;
             self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)

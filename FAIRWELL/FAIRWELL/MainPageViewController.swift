@@ -12,6 +12,7 @@ import Parse
 class MainPageViewController: UIViewController {
 
     
+    
     @IBOutlet weak var userProfilePicture: UIImageView!
     
     @IBOutlet weak var userFullNameLabel: UILabel!
@@ -50,6 +51,17 @@ class MainPageViewController: UIViewController {
         self.navigationController!.navigationBar.translucent = false;*/
         
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     override func didReceiveMemoryWarning() {
         

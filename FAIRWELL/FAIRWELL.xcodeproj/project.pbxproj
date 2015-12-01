@@ -77,6 +77,10 @@
 		2D91A3A31BF3F5D900475121 /* gradientforLogin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D91A3A21BF3F5D900475121 /* gradientforLogin.jpg */; };
 		2D91A3A91BF4227800475121 /* AccountSettingCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91A3A81BF4227800475121 /* AccountSettingCustomCell.swift */; };
 		2D91A3AB1BF434BD00475121 /* NotificationSettingCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91A3AA1BF434BD00475121 /* NotificationSettingCustomCell.swift */; };
+		2DA633451C0C2AD7006EC3F0 /* AccountSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA633441C0C2AD7006EC3F0 /* AccountSettingsViewController.swift */; };
+		2DA633471C0CCA60006EC3F0 /* NotificationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA633461C0CCA60006EC3F0 /* NotificationSettingsViewController.swift */; };
+		2DA633491C0D5A52006EC3F0 /* ChangeUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA633481C0D5A52006EC3F0 /* ChangeUsernameViewController.swift */; };
+		2DA6334B1C0D5A60006EC3F0 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6334A1C0D5A60006EC3F0 /* ChangePasswordViewController.swift */; };
 		2DF749AD1BE856390062EE40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214D6A1BE4062500E1736A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -163,6 +167,10 @@
 		2D91A3A21BF3F5D900475121 /* gradientforLogin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gradientforLogin.jpg; sourceTree = "<group>"; };
 		2D91A3A81BF4227800475121 /* AccountSettingCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingCustomCell.swift; sourceTree = "<group>"; };
 		2D91A3AA1BF434BD00475121 /* NotificationSettingCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSettingCustomCell.swift; sourceTree = "<group>"; };
+		2DA633441C0C2AD7006EC3F0 /* AccountSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingsViewController.swift; sourceTree = "<group>"; };
+		2DA633461C0CCA60006EC3F0 /* NotificationSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSettingsViewController.swift; sourceTree = "<group>"; };
+		2DA633481C0D5A52006EC3F0 /* ChangeUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeUsernameViewController.swift; sourceTree = "<group>"; };
+		2DA6334A1C0D5A60006EC3F0 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		2DF749B21BE89C080062EE40 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,11 +246,11 @@
 				2DF749B21BE89C080062EE40 /* MainPageViewController.swift */,
 				2D8195F51BF1B381001124F9 /* LeftSideViewController.swift */,
 				2D8195F71BF1B64F001124F9 /* RightSideViewController.swift */,
-				2D8195FD1BF35311001124F9 /* AccountSettingViewController.swift */,
-				2D91A3A81BF4227800475121 /* AccountSettingCustomCell.swift */,
-				2D8195FF1BF35430001124F9 /* NotificationSettingViewController.swift */,
-				2D91A3AA1BF434BD00475121 /* NotificationSettingCustomCell.swift */,
 				2D91A39E1BF3ED6F00475121 /* ResetPasswordViewController.swift */,
+				2DA633441C0C2AD7006EC3F0 /* AccountSettingsViewController.swift */,
+				2DA633461C0CCA60006EC3F0 /* NotificationSettingsViewController.swift */,
+				2DA633481C0D5A52006EC3F0 /* ChangeUsernameViewController.swift */,
+				2DA6334A1C0D5A60006EC3F0 /* ChangePasswordViewController.swift */,
 			);
 			path = FAIRWELL;
 			sourceTree = "<group>";
@@ -250,6 +258,10 @@
 		2D214C8E1BE167AF00E1736A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2D8195FD1BF35311001124F9 /* AccountSettingViewController.swift */,
+				2D91A3A81BF4227800475121 /* AccountSettingCustomCell.swift */,
+				2D8195FF1BF35430001124F9 /* NotificationSettingViewController.swift */,
+				2D91A3AA1BF434BD00475121 /* NotificationSettingCustomCell.swift */,
 				2D214C8F1BE167AF00E1736A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -439,9 +451,13 @@
 				2D8195FC1BF2B889001124F9 /* MainPageViewController.swift in Sources */,
 				2D8195FE1BF35311001124F9 /* AccountSettingViewController.swift in Sources */,
 				2D8195EA1BEDB7AE001124F9 /* MMDrawerVisualState.m in Sources */,
+				2DA633471C0CCA60006EC3F0 /* NotificationSettingsViewController.swift in Sources */,
 				2D214D5B1BE21B8D00E1736A /* LoginViewController.swift in Sources */,
+				2DA633451C0C2AD7006EC3F0 /* AccountSettingsViewController.swift in Sources */,
 				2D214C961BE167AF00E1736A /* ViewController.m in Sources */,
 				2D91A3AB1BF434BD00475121 /* NotificationSettingCustomCell.swift in Sources */,
+				2DA6334B1C0D5A60006EC3F0 /* ChangePasswordViewController.swift in Sources */,
+				2DA633491C0D5A52006EC3F0 /* ChangeUsernameViewController.swift in Sources */,
 				2D214D481BE1CF8200E1736A /* MyConnector.m in Sources */,
 				2D8195F81BF1B64F001124F9 /* RightSideViewController.swift in Sources */,
 				2D8195E91BEDB7AE001124F9 /* MMDrawerController.m in Sources */,
