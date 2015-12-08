@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D16617A1C16A4A3005C037B /* ninjaicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1661781C16A4A3005C037B /* ninjaicon.png */; };
+		2D16617B1C16A4A3005C037B /* titleicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1661791C16A4A3005C037B /* titleicon.png */; };
+		2D1661811C16D8DC005C037B /* AddStatementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1661801C16D8DC005C037B /* AddStatementViewController.swift */; };
+		2D1661851C174A53005C037B /* SmartSolveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1661841C174A53005C037B /* SmartSolveViewController.swift */; };
 		2D214C901BE167AF00E1736A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D214C8F1BE167AF00E1736A /* main.m */; };
 		2D214C931BE167AF00E1736A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D214C921BE167AF00E1736A /* AppDelegate.m */; };
 		2D214C961BE167AF00E1736A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D214C951BE167AF00E1736A /* ViewController.m */; };
@@ -55,7 +59,6 @@
 		2D214D411BE1CE2A00E1736A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D214D401BE1CE2A00E1736A /* SystemConfiguration.framework */; };
 		2D214D431BE1CE3000E1736A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D214D421BE1CE3000E1736A /* libz.tbd */; };
 		2D214D451BE1CE3500E1736A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D214D441BE1CE3500E1736A /* libsqlite3.tbd */; };
-		2D214D481BE1CF8200E1736A /* MyConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D214D471BE1CF8200E1736A /* MyConnector.m */; };
 		2D214D561BE1D56B00E1736A /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D214D551BE1D56B00E1736A /* RegisterPageViewController.swift */; };
 		2D214D5B1BE21B8D00E1736A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D214D5A1BE21B8D00E1736A /* LoginViewController.swift */; };
 		2D214D861BE7585200E1736A /* FacebookSDKs-iOS-20151026 in Resources */ = {isa = PBXBuildFile; fileRef = 2D214D851BE7585200E1736A /* FacebookSDKs-iOS-20151026 */; };
@@ -85,6 +88,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D1661781C16A4A3005C037B /* ninjaicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninjaicon.png; sourceTree = "<group>"; };
+		2D1661791C16A4A3005C037B /* titleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titleicon.png; sourceTree = "<group>"; };
+		2D1661801C16D8DC005C037B /* AddStatementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStatementViewController.swift; sourceTree = "<group>"; };
+		2D1661841C174A53005C037B /* SmartSolveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartSolveViewController.swift; sourceTree = "<group>"; };
 		2D214C8B1BE167AF00E1736A /* FAIRWELL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAIRWELL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D214C8F1BE167AF00E1736A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D214C911BE167AF00E1736A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,8 +145,6 @@
 		2D214D401BE1CE2A00E1736A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2D214D421BE1CE3000E1736A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		2D214D441BE1CE3500E1736A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		2D214D461BE1CF8200E1736A /* MyConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConnector.h; sourceTree = "<group>"; };
-		2D214D471BE1CF8200E1736A /* MyConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyConnector.m; sourceTree = "<group>"; };
 		2D214D491BE1CFD900E1736A /* FAIRWELL-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FAIRWELL-Bridging-Header.h"; sourceTree = "<group>"; };
 		2D214D551BE1D56B00E1736A /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		2D214D5A1BE21B8D00E1736A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -236,8 +241,6 @@
 				2D214C9C1BE167AF00E1736A /* LaunchScreen.storyboard */,
 				2D214C9F1BE167AF00E1736A /* Info.plist */,
 				2D214C8E1BE167AF00E1736A /* Supporting Files */,
-				2D214D461BE1CF8200E1736A /* MyConnector.h */,
-				2D214D471BE1CF8200E1736A /* MyConnector.m */,
 				2D214D491BE1CFD900E1736A /* FAIRWELL-Bridging-Header.h */,
 				2D214D871BE758B700E1736A /* MBProgressHUD.h */,
 				2D214D881BE758B700E1736A /* MBProgressHUD.m */,
@@ -251,6 +254,8 @@
 				2DA633461C0CCA60006EC3F0 /* NotificationSettingsViewController.swift */,
 				2DA633481C0D5A52006EC3F0 /* ChangeUsernameViewController.swift */,
 				2DA6334A1C0D5A60006EC3F0 /* ChangePasswordViewController.swift */,
+				2D1661801C16D8DC005C037B /* AddStatementViewController.swift */,
+				2D1661841C174A53005C037B /* SmartSolveViewController.swift */,
 			);
 			path = FAIRWELL;
 			sourceTree = "<group>";
@@ -270,6 +275,8 @@
 		2D214CB91BE17AE200E1736A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				2D1661781C16A4A3005C037B /* ninjaicon.png */,
+				2D1661791C16A4A3005C037B /* titleicon.png */,
 				2D91A3A21BF3F5D900475121 /* gradientforLogin.jpg */,
 				2D214CBA1BE17B1600E1736A /* app-logo.PNG */,
 				2D214CBB1BE17B1600E1736A /* appicon.png */,
@@ -422,7 +429,9 @@
 				2D214D861BE7585200E1736A /* FacebookSDKs-iOS-20151026 in Resources */,
 				2D91A39B1BF3ECA300475121 /* behind_alert_view.png in Resources */,
 				2D214CE11BE17B1600E1736A /* icon_6.jpg in Resources */,
+				2D16617B1C16A4A3005C037B /* titleicon.png in Resources */,
 				2D214C9B1BE167AF00E1736A /* Assets.xcassets in Resources */,
+				2D16617A1C16A4A3005C037B /* ninjaicon.png in Resources */,
 				2D214CEB1BE17B1700E1736A /* twitter_button.png in Resources */,
 				2D214CE51BE17B1700E1736A /* login_button.png in Resources */,
 				2D91A3A31BF3F5D900475121 /* gradientforLogin.jpg in Resources */,
@@ -453,12 +462,13 @@
 				2D8195EA1BEDB7AE001124F9 /* MMDrawerVisualState.m in Sources */,
 				2DA633471C0CCA60006EC3F0 /* NotificationSettingsViewController.swift in Sources */,
 				2D214D5B1BE21B8D00E1736A /* LoginViewController.swift in Sources */,
+				2D1661811C16D8DC005C037B /* AddStatementViewController.swift in Sources */,
 				2DA633451C0C2AD7006EC3F0 /* AccountSettingsViewController.swift in Sources */,
 				2D214C961BE167AF00E1736A /* ViewController.m in Sources */,
+				2D1661851C174A53005C037B /* SmartSolveViewController.swift in Sources */,
 				2D91A3AB1BF434BD00475121 /* NotificationSettingCustomCell.swift in Sources */,
 				2DA6334B1C0D5A60006EC3F0 /* ChangePasswordViewController.swift in Sources */,
 				2DA633491C0D5A52006EC3F0 /* ChangeUsernameViewController.swift in Sources */,
-				2D214D481BE1CF8200E1736A /* MyConnector.m in Sources */,
 				2D8195F81BF1B64F001124F9 /* RightSideViewController.swift in Sources */,
 				2D8195E91BEDB7AE001124F9 /* MMDrawerController.m in Sources */,
 				2D214D561BE1D56B00E1736A /* RegisterPageViewController.swift in Sources */,

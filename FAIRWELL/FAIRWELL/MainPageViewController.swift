@@ -22,6 +22,11 @@ class MainPageViewController: UIViewController {
         super.viewDidLoad();
         
         
+        //Setting navigation bar color
+        let navBarColor = UIColor(red: 0.376, green:0.686, blue:0.675, alpha:1); //hex #: 60afac
+        self.navigationController!.navigationBar.barTintColor = navBarColor;
+
+        
         
         //Putting user's full name onto User Profile page
         let userFirstName = PFUser.currentUser()!.objectForKey("First_Name") as! String;
@@ -44,11 +49,8 @@ class MainPageViewController: UIViewController {
               
             }
         }
-        /*
-        //Setting navigation bar color
-        let navBarColor = UIColor(red: 0.376, green:0.686, blue:0.675, alpha:1); //hex #: 60afac
-        self.navigationController!.navigationBar.barTintColor = navBarColor;
-        self.navigationController!.navigationBar.translucent = false;*/
+        
+
         
     }
     
@@ -72,7 +74,8 @@ class MainPageViewController: UIViewController {
         
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
         self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
-        
+
+    
         
     }
     

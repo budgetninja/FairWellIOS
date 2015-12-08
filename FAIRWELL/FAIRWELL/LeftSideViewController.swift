@@ -25,7 +25,11 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad(){
         super.viewDidLoad();
         
-        
+        //Setting navigation bar color
+        let navBarColor = UIColor(red: 0.376, green:0.686, blue:0.675, alpha:1); //hex #: 60afac
+        self.navigationController!.navigationBar.barTintColor = navBarColor;
+        self.navigationController!.navigationBar.translucent = false;
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -118,6 +122,11 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
         case 2:
             //Opens Smart Solve! page
             //COMING SOON
+            let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil);
+            let smartSolveViewController = mainStoryboard.instantiateViewControllerWithIdentifier("SmartSolveViewController");
+            let smartSolvePageNav = UINavigationController(rootViewController: smartSolveViewController);
+            self.mm_drawerController.centerViewController = smartSolvePageNav;
+            self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
             
             break;
         case 3:

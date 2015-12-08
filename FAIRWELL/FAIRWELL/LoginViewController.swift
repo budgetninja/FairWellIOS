@@ -270,6 +270,8 @@ class LoginViewController: UIViewController {
             presentingController.providesPresentationContextTransitionStyle = true
             presentingController.definesPresentationContext = true
             presentingController.modalPresentationStyle =  UIModalPresentationStyle.OverCurrentContext;
+            presentingController.view.backgroundColor = UIColor.clearColor();
+            
         }
         else {
             selfController.modalPresentationStyle =  UIModalPresentationStyle.CurrentContext;

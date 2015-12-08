@@ -24,8 +24,9 @@ class AccountSettingsViewController: UITableViewController, UIImagePickerControl
         
         //Setting navigation bar color
         let navBarColor = UIColor(red: 0.376, green:0.686, blue:0.675, alpha:1); //hex #: 60afac
-        self.navigationController!.navigationBar.barTintColor = navBarColor;
+        self.navigationController!.navigationBar.tintColor = navBarColor;
         self.navigationController!.navigationBar.translucent = false;
+
         
     }
     
@@ -37,13 +38,13 @@ class AccountSettingsViewController: UITableViewController, UIImagePickerControl
     
     
 
-    //Menu button tapped
+    /*//Menu button tapped
     @IBAction func leftSideButtonTapped(sender: AnyObject) {
         
         let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
         self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
     }
-    
+    */
     
     
     
@@ -89,19 +90,21 @@ class AccountSettingsViewController: UITableViewController, UIImagePickerControl
     
     
     
-    //Change your password which then leads to module view
+    //Change your user/password which then leads to module view
     
     override func prepareForSegue(segue:UIStoryboardSegue, sender: AnyObject?) {
         let newVC:UIViewController = segue.destinationViewController
         AccountSettingsViewController.setPresentationStyleForSelfController(self, presentingController: newVC)
     }
     
-    class func setPresentationStyleForSelfController(selfController: UIViewController, presentingController: UIViewController) {
+    class func setPresentationStyleForSelfController(selfController: UITableViewController, presentingController: UIViewController) {
         if NSProcessInfo.instancesRespondToSelector("isOperatingSystemAtLeastVersion:")
         {
             presentingController.providesPresentationContextTransitionStyle = true
             presentingController.definesPresentationContext = true
             presentingController.modalPresentationStyle =  UIModalPresentationStyle.OverCurrentContext;
+            presentingController.view.backgroundColor = UIColor.clearColor();
+
         }
         else {
             selfController.modalPresentationStyle =  UIModalPresentationStyle.CurrentContext;
