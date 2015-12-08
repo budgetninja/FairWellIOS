@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		2D16617A1C16A4A3005C037B /* ninjaicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1661781C16A4A3005C037B /* ninjaicon.png */; };
 		2D16617B1C16A4A3005C037B /* titleicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1661791C16A4A3005C037B /* titleicon.png */; };
-		2D1661811C16D8DC005C037B /* AddStatementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1661801C16D8DC005C037B /* AddStatementViewController.swift */; };
 		2D1661851C174A53005C037B /* SmartSolveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1661841C174A53005C037B /* SmartSolveViewController.swift */; };
+		2D1661871C17690C005C037B /* ViewStatementTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1661861C17690C005C037B /* ViewStatementTableViewController.swift */; };
+		2D1661891C176D71005C037B /* ResolveStatementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1661881C176D71005C037B /* ResolveStatementViewController.swift */; };
+		2D16618B1C176FE6005C037B /* AddStatementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16618A1C176FE6005C037B /* AddStatementViewController.swift */; };
 		2D214C901BE167AF00E1736A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D214C8F1BE167AF00E1736A /* main.m */; };
 		2D214C931BE167AF00E1736A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D214C921BE167AF00E1736A /* AppDelegate.m */; };
 		2D214C961BE167AF00E1736A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D214C951BE167AF00E1736A /* ViewController.m */; };
@@ -90,8 +92,10 @@
 /* Begin PBXFileReference section */
 		2D1661781C16A4A3005C037B /* ninjaicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninjaicon.png; sourceTree = "<group>"; };
 		2D1661791C16A4A3005C037B /* titleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titleicon.png; sourceTree = "<group>"; };
-		2D1661801C16D8DC005C037B /* AddStatementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStatementViewController.swift; sourceTree = "<group>"; };
 		2D1661841C174A53005C037B /* SmartSolveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartSolveViewController.swift; sourceTree = "<group>"; };
+		2D1661861C17690C005C037B /* ViewStatementTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStatementTableViewController.swift; sourceTree = "<group>"; };
+		2D1661881C176D71005C037B /* ResolveStatementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolveStatementViewController.swift; sourceTree = "<group>"; };
+		2D16618A1C176FE6005C037B /* AddStatementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStatementViewController.swift; sourceTree = "<group>"; };
 		2D214C8B1BE167AF00E1736A /* FAIRWELL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAIRWELL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D214C8F1BE167AF00E1736A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D214C911BE167AF00E1736A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -254,8 +258,10 @@
 				2DA633461C0CCA60006EC3F0 /* NotificationSettingsViewController.swift */,
 				2DA633481C0D5A52006EC3F0 /* ChangeUsernameViewController.swift */,
 				2DA6334A1C0D5A60006EC3F0 /* ChangePasswordViewController.swift */,
-				2D1661801C16D8DC005C037B /* AddStatementViewController.swift */,
 				2D1661841C174A53005C037B /* SmartSolveViewController.swift */,
+				2D1661861C17690C005C037B /* ViewStatementTableViewController.swift */,
+				2D1661881C176D71005C037B /* ResolveStatementViewController.swift */,
+				2D16618A1C176FE6005C037B /* AddStatementViewController.swift */,
 			);
 			path = FAIRWELL;
 			sourceTree = "<group>";
@@ -458,11 +464,12 @@
 			files = (
 				2D8196001BF35430001124F9 /* NotificationSettingViewController.swift in Sources */,
 				2D8195FC1BF2B889001124F9 /* MainPageViewController.swift in Sources */,
+				2D1661871C17690C005C037B /* ViewStatementTableViewController.swift in Sources */,
 				2D8195FE1BF35311001124F9 /* AccountSettingViewController.swift in Sources */,
+				2D16618B1C176FE6005C037B /* AddStatementViewController.swift in Sources */,
 				2D8195EA1BEDB7AE001124F9 /* MMDrawerVisualState.m in Sources */,
 				2DA633471C0CCA60006EC3F0 /* NotificationSettingsViewController.swift in Sources */,
 				2D214D5B1BE21B8D00E1736A /* LoginViewController.swift in Sources */,
-				2D1661811C16D8DC005C037B /* AddStatementViewController.swift in Sources */,
 				2DA633451C0C2AD7006EC3F0 /* AccountSettingsViewController.swift in Sources */,
 				2D214C961BE167AF00E1736A /* ViewController.m in Sources */,
 				2D1661851C174A53005C037B /* SmartSolveViewController.swift in Sources */,
@@ -477,6 +484,7 @@
 				2D214CE81BE17B1700E1736A /* README.md in Sources */,
 				2D8195F61BF1B381001124F9 /* LeftSideViewController.swift in Sources */,
 				2D91A39F1BF3ED6F00475121 /* ResetPasswordViewController.swift in Sources */,
+				2D1661891C176D71005C037B /* ResolveStatementViewController.swift in Sources */,
 				2D214C901BE167AF00E1736A /* main.m in Sources */,
 				2D8195EB1BEDB7AE001124F9 /* UIViewController+MMDrawerController.m in Sources */,
 				2D8195E81BEDB7AE001124F9 /* MMDrawerBarButtonItem.m in Sources */,
