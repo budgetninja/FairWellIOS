@@ -116,6 +116,11 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             break;
         case 1:
             //Opens Friend List page
+            let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle:nil);
+            let friendListViewController = mainStoryboard.instantiateViewControllerWithIdentifier("FriendListViewController");
+            let friendListPageNav = UINavigationController(rootViewController: friendListViewController);
+            self.mm_drawerController.centerViewController = friendListPageNav;
+            self.mm_drawerController.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
             
             
             break;

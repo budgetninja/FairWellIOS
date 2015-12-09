@@ -86,6 +86,9 @@
 		2DA633471C0CCA60006EC3F0 /* NotificationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA633461C0CCA60006EC3F0 /* NotificationSettingsViewController.swift */; };
 		2DA633491C0D5A52006EC3F0 /* ChangeUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA633481C0D5A52006EC3F0 /* ChangeUsernameViewController.swift */; };
 		2DA6334B1C0D5A60006EC3F0 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6334A1C0D5A60006EC3F0 /* ChangePasswordViewController.swift */; };
+		2DA8C8B41C17982E003ACDCB /* ninjaicon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA8C8B21C17982E003ACDCB /* ninjaicon2.png */; };
+		2DA8C8B51C17982E003ACDCB /* ninjaicon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA8C8B31C17982E003ACDCB /* ninjaicon3.png */; };
+		2DA8C8B71C1842C2003ACDCB /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA8C8B61C1842C2003ACDCB /* FriendListViewController.swift */; };
 		2DF749AD1BE856390062EE40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D214D6A1BE4062500E1736A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -180,6 +183,9 @@
 		2DA633461C0CCA60006EC3F0 /* NotificationSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSettingsViewController.swift; sourceTree = "<group>"; };
 		2DA633481C0D5A52006EC3F0 /* ChangeUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeUsernameViewController.swift; sourceTree = "<group>"; };
 		2DA6334A1C0D5A60006EC3F0 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		2DA8C8B21C17982E003ACDCB /* ninjaicon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninjaicon2.png; sourceTree = "<group>"; };
+		2DA8C8B31C17982E003ACDCB /* ninjaicon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninjaicon3.png; sourceTree = "<group>"; };
+		2DA8C8B61C1842C2003ACDCB /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
 		2DF749B21BE89C080062EE40 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -262,6 +268,7 @@
 				2D1661861C17690C005C037B /* ViewStatementTableViewController.swift */,
 				2D1661881C176D71005C037B /* ResolveStatementViewController.swift */,
 				2D16618A1C176FE6005C037B /* AddStatementViewController.swift */,
+				2DA8C8B61C1842C2003ACDCB /* FriendListViewController.swift */,
 			);
 			path = FAIRWELL;
 			sourceTree = "<group>";
@@ -281,6 +288,8 @@
 		2D214CB91BE17AE200E1736A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				2DA8C8B21C17982E003ACDCB /* ninjaicon2.png */,
+				2DA8C8B31C17982E003ACDCB /* ninjaicon3.png */,
 				2D1661781C16A4A3005C037B /* ninjaicon.png */,
 				2D1661791C16A4A3005C037B /* titleicon.png */,
 				2D91A3A21BF3F5D900475121 /* gradientforLogin.jpg */,
@@ -435,6 +444,7 @@
 				2D214D861BE7585200E1736A /* FacebookSDKs-iOS-20151026 in Resources */,
 				2D91A39B1BF3ECA300475121 /* behind_alert_view.png in Resources */,
 				2D214CE11BE17B1600E1736A /* icon_6.jpg in Resources */,
+				2DA8C8B51C17982E003ACDCB /* ninjaicon3.png in Resources */,
 				2D16617B1C16A4A3005C037B /* titleicon.png in Resources */,
 				2D214C9B1BE167AF00E1736A /* Assets.xcassets in Resources */,
 				2D16617A1C16A4A3005C037B /* ninjaicon.png in Resources */,
@@ -450,6 +460,7 @@
 				2D91A39D1BF3ECAC00475121 /* menu-icon.png in Resources */,
 				2D214CE01BE17B1600E1736A /* icon_5a.jpg in Resources */,
 				2D8195FB1BF28537001124F9 /* LaunchScreen.storyboard in Resources */,
+				2DA8C8B41C17982E003ACDCB /* ninjaicon2.png in Resources */,
 				2D214CE41BE17B1600E1736A /* icon_7a.jpg in Resources */,
 				2D214CD91BE17B1600E1736A /* icon_2.jpg in Resources */,
 			);
@@ -466,6 +477,7 @@
 				2D8195FC1BF2B889001124F9 /* MainPageViewController.swift in Sources */,
 				2D1661871C17690C005C037B /* ViewStatementTableViewController.swift in Sources */,
 				2D8195FE1BF35311001124F9 /* AccountSettingViewController.swift in Sources */,
+				2DA8C8B71C1842C2003ACDCB /* FriendListViewController.swift in Sources */,
 				2D16618B1C176FE6005C037B /* AddStatementViewController.swift in Sources */,
 				2D8195EA1BEDB7AE001124F9 /* MMDrawerVisualState.m in Sources */,
 				2DA633471C0CCA60006EC3F0 /* NotificationSettingsViewController.swift in Sources */,
