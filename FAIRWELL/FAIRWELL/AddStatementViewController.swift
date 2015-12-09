@@ -22,10 +22,10 @@ class AddStatementViewController: UIViewController, UIPickerViewDelegate, UIPick
         super.viewDidLoad()
         
         
-        picker1.delegate = self;
-        picker1.dataSource = self;
-        picker2.delegate = self;
-        picker2.dataSource = self;
+        self.picker1.delegate = self;
+        self.picker1.dataSource = self;
+        self.picker2.delegate = self;
+        self.picker2.dataSource = self;
 
         //Setting navigation bar color
         let navBarColor = UIColor(red: 0.376, green:0.686, blue:0.675, alpha:1); //hex #: 60afac
